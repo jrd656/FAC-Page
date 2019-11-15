@@ -13,7 +13,38 @@
 
 <body>
         <h1>My web page</h1>
+        <h2>Automatic Slideshow Test</h2>
 
+        <!-- carousel container -->
+        <div  class="JD-slideshowcontainer " title="Use left arrow, right arrow, and space bar to control slides." style="max-width:500px">
+          
+          <div class = "caption-container">
+            <div class="caption-text caption1">Caption Text 1 </div>
+            <div class="caption-text">Caption Text 2 </div>
+            <div class="caption-text">Caption Text 3 </div>
+          </div> <!-- captions -->
+        
+          <!-- images below -->
+          <img class="slide1 mySlides fade" src="img_la.jpg" style="width:100%">
+          <img class="mySlides fade" src="img_ny.jpg" style="width:100%">
+          <img class="mySlides fade" src="img_chicago.jpg" style="width:100%">
+        
+          
+          <!-- container for arrows and buttons and pause -->
+         
+             <!-- left and right arrow buttons below -->
+            <div class="arrows prev" onclick="plusDivs(-1)" title="(press left arrow key)">&#10094;</div>
+            <div class="arrows next" onclick="plusDivs(1)" title="(press right arrow key)">&#10095;</div>
+              <!-- pause button below, arrows above -->
+                <button class="pause-btn" id="pause" title="(press space key to play/pause)">&#9616;&nbsp;&#9612</button>
+                
+                <div class="dot-container">
+                    <span class="JD-badge dot" onclick="currentDiv(1)"></span>
+                    <span class="JD-badge dot" onclick="currentDiv(2)"></span>
+                    <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                  </div>
+        </div> <!-- carousel -->
+        
 
 
 <script src="/script.js"></script>

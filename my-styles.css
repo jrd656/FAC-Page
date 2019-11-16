@@ -1,5 +1,15 @@
 <style>
 
+
+body {
+    font-family: 'Eesti';
+    color: blue;
+}
+
+.logo-container {
+    display: none;
+}
+
 /* Fading animation */
 .fade {
   animation-name: fade;

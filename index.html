@@ -12,38 +12,64 @@
 
 
 <body>
-        <h1>My web page</h1>
-        <h2>Automatic Slideshow Test</h2>
+    <p id="lastModified">Last modified?</p>
+    <p id="lastRefresh">Time at refresh?</p>
+
+    <h1>James Daniels</h1>
+
+    <p>Hi, I'm James. After spending 8 years working in the construction and civil engineering industry, I decided that I'd find a career in coding more fulfilling. Since July 2019 I've been exploring the world of software development, doing online courses on FreeCodeCamp, Codecademy; challenges on CodeWars; and developing my own webpages on Visual Studio Code. During this time, I've taken up professional dog walking and domestic cleaning to give me the funds and also the spare time to pursue my coding dream.</p>
+
+    <div class="logo-container">
+            <img class="logo-image" src="FreeCodeCamp.jpeg" style="width:100%">
+            <img class="logo-image" src="Codewars.png" style="width:100%">
+            <img class="logo-image" src="Codecademylogo.webp" style="width:100%">
+
+    </div>
+    <ul>
+        <li>Tell us with your code who you are</li> 
+        <li>Demonstrate your learning from the prerequisites</li>
+        <li>Tell us about why you are applying for the programme</li>
+        <li>Contain a link back to the GitHub repo that contains the code for your site</li>
+        <li>Contain links to your freeCodeCamp (please make sure that your profile is public) and Codewars pages</li>
+        <li>Include an image carousel (the image carousel must be built into your website, a link to a separate page or CodePen will not be accepted)</li>
+        <li>Be hosted on Github
+        <li> Not use a GitHub theme
+        <li>  Not use any JavaScript or CSS libraries like Bootstrap or jQuery or use an image carousel package like Flickity ⁠— we want to see your own code.
+    </ul>
+    
+    <ul>
+        <li>freeCodeCamp - Earn a minimum of 250 points on freeCodeCamp. We recommend beginning with the following sections:</li>
+        <li>Codewars - Reach 5 kyu and 300 honor points in JavaScript on Codewars.</li>
+    </ul>
+
+    <h2>Automatic Slideshow Test</h2>
 
         <!-- carousel container -->
-        <div  class="JD-slideshowcontainer " title="Use left arrow, right arrow, and space bar to control slides." style="max-width:500px">
+    <div  class="JD-slideshowcontainer " title="Use left arrow, right arrow, and space bar to control slides." style="max-width:500px">
           
-          <div class = "caption-container">
-            <div class="caption-text caption1">Caption Text 1 </div>
+        <div class = "caption-container">
+        <div class="caption-text caption1">Caption Text 1 </div>
             <div class="caption-text">Caption Text 2 </div>
             <div class="caption-text">Caption Text 3 </div>
-          </div> <!-- captions -->
+        </div> <!-- captions -->
         
-          <!-- images below -->
-          <img class="slide1 mySlides fade" src="img_la.jpg" style="width:100%">
-          <img class="mySlides fade" src="img_ny.jpg" style="width:100%">
-          <img class="mySlides fade" src="img_chicago.jpg" style="width:100%">
+        <!-- images below -->
+        <img class="slide1 mySlides fade" src="img_la.jpg" style="width:100%">
+        <img class="mySlides fade" src="img_ny.jpg" style="width:100%">
+        <img class="mySlides fade" src="img_chicago.jpg" style="width:100%">
         
-          
-          <!-- container for arrows and buttons and pause -->
-         
-             <!-- left and right arrow buttons below -->
-            <div class="arrows prev" onclick="plusDivs(-1)" title="(press left arrow key)">&#10094;</div>
-            <div class="arrows next" onclick="plusDivs(1)" title="(press right arrow key)">&#10095;</div>
-              <!-- pause button below, arrows above -->
-                <button class="pause-btn" id="pause" title="(press space key to play/pause)">&#9616;&nbsp;&#9612</button>
-                
-                <div class="dot-container">
-                    <span class="JD-badge dot" onclick="currentDiv(1)"></span>
-                    <span class="JD-badge dot" onclick="currentDiv(2)"></span>
-                    <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                  </div>
-        </div> <!-- carousel -->
+        <!-- left and right arrow buttons below -->
+        <div class="arrows prev" onclick="plusDivs(-1)" title="(press left arrow key)">&#10094;</div>
+        <div class="arrows next" onclick="plusDivs(1)" title="(press right arrow key)">&#10095;</div>
+            <!-- pause button below, arrows above -->
+            <button class="pause-btn" id="pause" title="(press space key to play/pause)">&#9616;&nbsp;&#9612</button>
+            
+            <div class="dot-container">
+                <span class="JD-badge dot" onclick="currentDiv(1)"></span>
+                <span class="JD-badge dot" onclick="currentDiv(2)"></span>
+                <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                </div>
+    </div> <!-- carousel -->
         
 
 

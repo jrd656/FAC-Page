@@ -1,4 +1,11 @@
 
+lastModified()
+
+function lastModified() {
+  var x = document.lastModified;
+  document.getElementById("lastModified").innerHTML = "Last modified: " + x ;
+  document.getElementById("lastRefresh").innerHTML = "Last refresh: " + Date() ;
+}
 
 
 var myIndex = 0;
@@ -12,16 +19,17 @@ function carousel() {
   var x = document.getElementsByClassName("mySlides"); // x = array of images
   var dots = document.getElementsByClassName("dot"); //round buttons as an array
   var captions = document.getElementsByClassName("caption-text");
-  console.log(dots);
+
   for (i = 0; i < x.length; i++) { //Hides elements
     x[i].style.display = "none";  // Makes all images invisible
     dots[i].className = dots[i].className.replace(" JDwhite", ""); //makes dots all blank instead of white
     captions[i].style.display = "none";
-    console.log(dots);
   }
+
   myIndex++; // Adds 1 to index, so now index is 1. Stops -1 being an answer.
   if (myIndex > x.length) {myIndex = 1} //Brings index back to 1 once index gets higher than length. 
-  if (myIndex <= 0) {myIndex = x.length} 
+  if (myIndex <= 0) {myIndex = x.length
+} 
 
   x[myIndex-1].style.display = "block";  //Displays the index image -1.
   dots[myIndex-1].className += " JDwhite"; // Makes dot solid.
@@ -87,7 +95,7 @@ function TestFunction(key) {
         clearInterval(slideInterval);
         slideInterval = setInterval(carousel,defaultInterval);}
     if (key.keyCode == 39) {plusDivs(1)}
-    console.log(key.keyCode)}
+}
 
 //space is 32
 //left arrow 37 right arrow 38

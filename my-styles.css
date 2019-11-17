@@ -50,6 +50,8 @@ a:active {color: blue;}
       position:relative;
       margin-bottom: 40px;
       background-color: black;
+
+      width:100%;
     }
   
     .mySlides {
@@ -57,26 +59,48 @@ a:active {color: blue;}
         object-fit:contain;
         max-height: 200px;
         }
-      .slide1 {display:block;}
+    .slide1 {display:block;}
+
+  
 
     .caption-container {
-    position:absolute;
-    left: 50%;
-    transform: translate(-50%, 50%);
-  
-    z-index: 1;
-  
-  }
-  
-  .caption-text {
-    color: white;
-    font-size: 15px;
-    text-shadow: 0px 0px 8px #202020;
-    text-align: center;
-  
-    display:none;
-  }
-  
+        position:absolute;
+        height: 100%;
+        width: 30%;
+        left: 16.5%;
+
+        
+        
+        /* left: 50%; */
+        /* transform: translate(-50%, 50%); */
+        z-index: 1;
+        background-color: rgba(128, 128, 128, 0.418); */
+    }
+
+    /* .top-left {
+        
+        position: absolute;
+        top: 10px;
+        left: 0;
+        transform: none;
+        
+
+
+        background-color: red;
+        
+    } */
+
+
+    .caption-text {
+        color: white;
+        font-size: 15px;
+        text-shadow: 0px 0px 8px #202020;
+        text-align: center;
+        vertical-align: middle;
+
+
+    }
+
     .caption1 {
     display:block;
     }
@@ -95,6 +119,8 @@ a:active {color: blue;}
   
     transition: 0.6s ease;
     border-radius: 100%;
+
+    z-index: 2;
     }
   
   .next {
@@ -118,7 +144,7 @@ a:active {color: blue;}
     cursor: pointer;
   
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
     transform: translate(-50%, 0%);
   
@@ -132,6 +158,8 @@ a:active {color: blue;}
     border-color: rgba(207, 207, 207, 0.774);
     border-width: 2px;
     border-style: solid;
+
+    z-index: 3;
   }
   
   button:focus {outline:0;}
@@ -146,6 +174,8 @@ a:active {color: blue;}
     bottom: 1%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    z-index: 3;
     }
   
     .JD-badge {
@@ -162,6 +192,8 @@ a:active {color: blue;}
     border-color: rgba(207, 207, 207, 0.774);
     border-width: 2px;
     border-style: solid;
+
+    
   }
   
   .JDwhite {

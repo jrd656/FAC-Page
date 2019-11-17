@@ -66,15 +66,16 @@ a:active {color: blue;}
     .caption-container {
         position:absolute;
         height: 100%;
-        width: 30%;
-        left: 16.5%;
+        width: 50%;
 
+        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.76) ,transparent);
         
+
         
         /* left: 50%; */
         /* transform: translate(-50%, 50%); */
         z-index: 1;
-        background-color: rgba(128, 128, 128, 0.418); */
+        /* background-color: rgba(0, 0, 0, 0.418);  */
     }
 
     /* .top-left {
@@ -95,8 +96,11 @@ a:active {color: blue;}
         color: white;
         font-size: 15px;
         text-shadow: 0px 0px 8px #202020;
-        text-align: center;
-        vertical-align: middle;
+        text-align: left;
+        position: absolute;
+        top: 10%;
+        right:20%;
+        width: 40%;
 
 
     }

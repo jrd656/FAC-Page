@@ -18,7 +18,7 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides"); // x = array of images
   var dots = document.getElementsByClassName("dot"); //round buttons as an array
-  var captions = document.getElementsByClassName("caption-text"); //captions array
+  var captions = document.getElementsByClassName("caption-containers"); //captions array
 
   for (i = 0; i < x.length; i++) { //Hides elements
     x[i].style.display = "none";  // Makes all images invisible
@@ -31,7 +31,7 @@ function carousel() {
   if (myIndex <= 0) {myIndex = x.length}; 
 
 //show the relevant item
-  x[myIndex-1].style.display = "block";  //Displays the index image -1.
+  x[myIndex-1].style.display = "inline-block";  //Displays the index image -1.
   dots[myIndex-1].className += " JDwhite"; // Makes dot solid.
   captions[myIndex-1].style.display = "block";
   // console.log(x[myIndex-1].style.display);
@@ -43,7 +43,7 @@ function plusDivs(arrowDirection){ // arrow direction gives arg -1 for left, 1 f
     //take arrays
     var x = document.getElementsByClassName("mySlides"); // x = array of images
     var dots = document.getElementsByClassName("dot"); //round buttons as an array
-    var captions = document.getElementsByClassName("caption-text"); //captions array
+    var captions = document.getElementsByClassName("caption-containers"); //captions array
 
     for (i = 0; i < x.length; i++) { //hide arrays
     x[i].style.display = "none";  // Makes all images invisible

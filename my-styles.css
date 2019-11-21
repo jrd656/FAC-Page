@@ -6,7 +6,7 @@ html {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: blue;
-    margin: 5%
+    margin: 5%;
 }
 
 h1 {
@@ -46,6 +46,7 @@ a:active {color: blue;}
   
   .JD-slideshowcontainer {
       max-width: 800px;
+      min-height: 200px;
       margin: auto;
       position:relative;
       margin-bottom: 40px;
@@ -55,55 +56,81 @@ a:active {color: blue;}
     }
   
     .mySlides {
-        display:none;
-        object-fit:contain;
-        max-height: 200px;
+      display:none;
+      object-fit:contain;
+      max-height: 200px;
+
+        width:100%;
+        
+        width: 100%;
+        height: 400px;
+        vertical-align: middle;
+        
         }
     .slide1 {display:block;}
 
   
 
-    .caption-container {
+    .caption-containers {
         position:absolute;
         height: 100%;
         width: 50%;
-
-        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.76) ,transparent);
-        
-
-        
-        /* left: 50%; */
-        /* transform: translate(-50%, 50%); */
+        display: none;
         z-index: 1;
-        /* background-color: rgba(0, 0, 0, 0.418);  */
     }
-
-    /* .top-left {
-        
-        position: absolute;
-        top: 10px;
-        left: 0;
-        transform: none;
-        
-
-
-        background-color: red;
-        
-    } */
-
 
     .caption-text {
         color: white;
         font-size: 15px;
-        text-shadow: 0px 0px 8px #202020;
-        text-align: left;
+        text-shadow: 0px 0px 8px black;
         position: absolute;
+    }
+
+    .top-left-container {
+        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.76) ,transparent);} 
+    .top-right-container {
+        right: 0;
+        background-image: linear-gradient(to left,rgba(0, 0, 0, 0.76) ,transparent);} 
+    
+    .top-left-cap {
+        text-align: left;
         top: 10%;
         right:20%;
         width: 40%;
-
-
     }
+
+    .top-right-cap {
+        text-align: right;
+        top: 10%;
+        left:10%;
+        width: 40%;
+    }
+
+    /* Some center tests */ 
+    .test1  {
+  background-color: #0074D9;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.test2 {
+  background-color: #FFDC00;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.test3 {
+  background-color: #3D9970;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+}
+  
+
 
     .caption1 {
     display:block;

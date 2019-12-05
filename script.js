@@ -8,6 +8,15 @@ function lastModified() {
 }
 
 
+var quickInterval = 100;
+var widthInterval = setInterval(screenWidth,quickInterval);
+function screenWidth() {
+  var x = "Total Width: " + window.innerWidth;
+  document.getElementById("screenWidth").innerHTML = "Screen.width: " + x ;
+}
+
+
+
 var myIndex = 0;
 var defaultInterval = 500;
 var slideInterval = setInterval(carousel,defaultInterval);
@@ -120,5 +129,6 @@ function TestFunction(key) {
 
 //space is 32, p is 80
 //left arrow 37 right arrow 38
+
 
 

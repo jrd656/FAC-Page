@@ -12,85 +12,102 @@
 
 
 <body>
-    <p id="lastModified">Last modified?</p>
-    <p id="lastRefresh">Time at refresh?</p>
+    
+    <p>   <!-- Menu Bar -->
+        <ul>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="#about-me-section">About</a></li>
+            <li><a href="#Prerequisuites-section-id">Prerequisite Scores</a></li>
+            <li><a href="#contact-me-section-id">Contact Me</a></li>
+         </ul>
+    </p> <!-- Menu Bar -->
+
+    <p class="developer-info">  <!-- Developer info -->
+        <ul id="developer-ul">
+            <li id="lastModified" class="dev-li">Last modified?</li>
+            <li id="lastRefresh" class="dev-li">Time at refresh?</li>
+            <li id="screenWidth" class="dev-li">Screen width</li>
+        </ul>   
+    </p>  <!-- Developer info -->
 
     <h1>James Daniels</h1>
+    <p id="about-me-section-id">
+        <h2>About Me</h2>
+            <p class="about-me">Hi, I'm James and I'm pursuing a career in coding. I previously spent 8 years working in the construction and civil engineering industry. Since July 2019 I've been exploring the world of software development, doing online courses on FreeCodeCamp, Codecademy; completing challenges on CodeWars; and developing my own webpages on Visual Studio Code. During this time, I've taken up professional dog walking and domestic cleaning to give me the funds and also the spare time to pursue my coding dream.</p>
 
-    <p class="about-me">Hi, I'm James and I'm pursuing a career in coding. I previously spent 8 years working in the construction and civil engineering industry. Since July 2019 I've been exploring the world of software development, doing online courses on FreeCodeCamp, Codecademy; completing challenges on CodeWars; and developing my own webpages on Visual Studio Code. During this time, I've taken up professional dog walking and domestic cleaning to give me the funds and also the spare time to pursue my coding dream.</p>
 
-
-    <!-- carousel container -->
-    <div  class="JD-slideshowcontainer " title="Use left arrow, right arrow, and 'p' to control slides." style="max-width:500px">
-        
-            <div class = "caption-containers caption1 top-left-container">
-                <div class="caption-text top-left-cap">1 Hi, I'm James and I'm pursuing a career in coding. </div>
-            </div>
-            <div class = "caption-containers top-right-container">
-                <div class="caption-text top-right-cap" style="left:25%">2 Since July 2019 I've been exploring the world of software development</div>
-            </div>
-            <div class = "caption-containers top-right-container">    
-                <div class="caption-text top-right-cap" style="top:5%; right:5%">I previously spent 8 years working in the construction and civil engineering industries.</div>
-            </div>
-            <div class = "caption-containers top-left-container">
-                    <div class="caption-text top-left-cap" style="top:15%; left:25%">Working on some high profile projects in the UK and the Middle East.</div>
-                    <div class="caption-text top-right-cap" style="left: 100%; top:15%; transform: translate(85%)">(It's the same bathroom!) </div>
-            </div>
-            <div class = "caption-containers top-right-container" style="height:25%; background-image: linear-gradient(210deg,rgba(0, 0, 0, 0.082) ,transparent);">
-                    <div class="caption-text top-right-cap" style="top:5%; left:50%;">(SCANDAL!) </div>
-            </div>
-
-  
-            
-            <!-- images below -->
-            <img class="slide1 mySlides fade" src="/images/JD in Abbey.jpg">
-            <img class="mySlides fade" src="/images/Network Logos.png ">
-            <img class="mySlides fade" src="/images/James Daniels Construction DOH HQ.jpg">
-            <img class="mySlides fade" src="/images/DOH Scandal.png"> 
-            <img class="mySlides fade" src="/images/S*n Zoom.png">
-            
-            <!-- left and right arrow buttons below -->
-            <div class="arrows prev" onclick="plusDivs(-1)" title="(press left arrow key)">&#10094;</div>
-            <div class="arrows next" onclick="plusDivs(1)" title="(press right arrow key)">&#10095;</div>
-                <!-- pause button below, arrows above -->
-                <button class="pause-btn" id="pause" title="(press 'p key to play/pause)">&#9616;&nbsp;&#9612</button>
+            <!-- carousel container -->
+            <div  class="JD-slideshowcontainer " title="Use left arrow, right arrow, and 'p' to control slides." style="max-width:500px">
                 
-                <div class="dot-container">
-                    <span class="JD-badge dot" onclick="currentDiv(1)"></span>
-                    <span class="JD-badge dot" onclick="currentDiv(2)"></span>
-                    <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                    <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                    <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                    <div class = "caption-containers caption1 top-left-container">
+                        <div class="caption-text top-left-cap">1 Hi, I'm James and I'm pursuing a career in coding. </div>
                     </div>
-        </div> <!-- carousel -->
-                
-
-    <div class="logos-container">
-        <a href="https://www.freecodecamp.org/jrd656">
-            <div class="logo-container">
-                <img class="logo-image" src="FCClogo.PNG" style="width:100%">
-                <p class="logo-caption">396 points on FreeCodeCamp!</p>
-            </div>
-         <a href="https://www.codecademy.com/profiles/jamesDaniels1213407347">
-            <div class="logo-container">
-                <img class="logo-image" src="Codecademylogo.webp" style="width:100%">
-                <p class="logo-caption">396 points on FreeCodeCamp!</p>
-            </div>
-        </a>
-        </a>
-        <a href="https://www.freecodecamp.org/jrd656">
-            <div class="logo-container">
-                <img class="logo-image" src="Codewarslogo.png" style="width:100%">
-                <p class="logo-caption">396 points on FreeCodeCamp!</p>
-            </div>
-        </a>
-        <a href="https://www.freecodecamp.org/jrd656">
-            <div class="logo-container">
-                <img class="logo-image" src="GHlogo.png" style="width:100%">
-                <p class="logo-caption">396 points on FreeCodeCamp!</p>
-            </div>
-        </a>    
-    </div>
+                    <div class = "caption-containers top-right-container">
+                        <div class="caption-text top-right-cap" style="left:25%">2 Since July 2019 I've been exploring the world of software development</div>
+                    </div>
+                    <div class = "caption-containers top-right-container">    
+                        <div class="caption-text top-right-cap" style="top:5%; right:5%">I previously spent 8 years working in the construction and civil engineering industries.</div>
+                    </div>
+                    <div class = "caption-containers top-left-container">
+                            <div class="caption-text top-left-cap" style="top:15%; left:25%">Working on some high profile projects in the UK and the Middle East.</div>
+                            <div class="caption-text top-right-cap" style="left: 100%; top:15%; transform: translate(85%)">(It's the same bathroom!) </div>
+                    </div>
+                    <div class = "caption-containers top-right-container" style="height:25%; background-image: linear-gradient(210deg,rgba(0, 0, 0, 0.082) ,transparent);">
+                            <div class="caption-text top-right-cap" style="top:5%; left:50%;">(SCANDAL!) </div>
+                    </div>
+                    
+                    <!-- images below -->
+                    <img class="slide1 mySlides fade" src="/images/JD in Abbey.jpg">
+                    <img class="mySlides fade" src="/images/Network Logos.png ">
+                    <img class="mySlides fade" src="/images/James Daniels Construction DOH HQ.jpg">
+                    <img class="mySlides fade" src="/images/DOH Scandal.png"> 
+                    <img class="mySlides fade" src="/images/S*n Zoom.png">
+                    
+                    <!-- left and right arrow buttons below -->
+                    <div class="arrows prev" onclick="plusDivs(-1)" title="(press left arrow key)">&#10094;</div>
+                    <div class="arrows next" onclick="plusDivs(1)" title="(press right arrow key)">&#10095;</div>
+                        <!-- pause button below, arrows above -->
+                        <button class="pause-btn" id="pause" title="(press 'p key to play/pause)">&#9616;&nbsp;&#9612</button>
+                        
+                        <div class="dot-container">
+                            <span class="JD-badge dot" onclick="currentDiv(1)"></span>
+                            <span class="JD-badge dot" onclick="currentDiv(2)"></span>
+                            <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                            <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                            <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                            </div>
+                </div> <!-- carousel -->
+    </p> <!-- About Me -->
+                    
+    <div id="Prerequisuites-section-id">
+        <h2>Prerequisite Scores</h2>
+        <div class="logos-container">
+            <a href="https://www.freecodecamp.org/jrd656">
+                <div class="logo-container">
+                    <img class="logo-image" src="FCClogo.PNG" style="width:100%">
+                    <p class="logo-caption">396 points on FreeCodeCamp!</p>
+                </div>
+            <a href="https://www.codecademy.com/profiles/jamesDaniels1213407347">
+                <div class="logo-container">
+                    <img class="logo-image" src="Codecademylogo.webp" style="width:100%">
+                    <p class="logo-caption">396 points on FreeCodeCamp!</p>
+                </div>
+            </a>
+            </a>
+            <a href="https://www.freecodecamp.org/jrd656">
+                <div class="logo-container">
+                    <img class="logo-image" src="Codewarslogo.png" style="width:100%">
+                    <p class="logo-caption">396 points on FreeCodeCamp!</p>
+                </div>
+            </a>
+            <a href="https://www.freecodecamp.org/jrd656">
+                <div class="logo-container">
+                    <img class="logo-image" src="GHlogo.png" style="width:100%">
+                    <p class="logo-caption">396 points on FreeCodeCamp!</p>
+                </div>
+            </a>    
+        </div> <!--logos container-->
+    </div> <!--prerequisites section-->
 
     <ul>
         <li>Tell us with your code who you are</li> 
@@ -109,7 +126,67 @@
         <li>Codewars - Reach 5 kyu and 300 honor points in JavaScript on Codewars.</li>
     </ul>
 
-    <h2>Automatic Slideshow Test</h2>
+    <div class="contact-me-section" id="contact-me-section-id" style="background-color: #f8f9fa;">
+        <div class="form-headers" style="text-align:center; padding:10px;">
+                <h2>Contact Me</h2>
+                <p>Send me an email to jrd656@gmail.com or use this form:</p>
+        </div>
+        <form action="/action_page.php" class="form-container" style="
+            padding: 10px;
+            
+            ">
+
+            <div class="form-container" style="
+                        background-color: blue;
+                        display:flex; 
+                        flex-direction: row; 
+                        align-items: flex-start; 
+                        justify-content: center;
+                        flex-flow: row wrap;
+                        
+                        "
+                        >
+            <!--    Display:Flex makes it responsive to width change
+                    Flex-direction is row by default
+                    align-items: flex-start; Adjusts vertically. flex-start would be to top left? Alternatively center would have moved to the middle left. Justify-content is for horizontal adjustments.
+                    justify-content: space-around; I HAVEN'T USED THIS BUT WOULD ARRANGE HORIZONTALLY WITH EVEN SPACING
+                    align-self:flex-start; NOT USED. THIS WOULD TAKE A SPECIFIC ITEM AND SAY TO ALIGN AT THE TOP OF THE ROW.
+                    
+                -->
+                <div class="form-name-email" style="
+                background-color: gray;
+                text-align:left;
+                width: 390px;
+                padding: 10px;
+                display:flex;
+                ">
+                <!-- margin: auto; REMOVED. It was centering everything vertically, but name/email/subject weren't lined up nicely -->
+                <!--   <label for="name">Name</label> -->
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                <!--    <label for="email">email</label> -->
+                    <input type="text" id="email" name="email" placeholder="Your Email" style="margin-left:auto;">
+                </div>
+                <div class="form-message" style="
+                background-color: teal;
+                height: 100px;
+                width: 390px;
+                display: flex;
+                flex-direction:column;
+                padding: 10px;
+                ">
+                <!--   <label for="subject">Subject</label> -->
+                    <textarea id="subject" name="subject" placeholder="Message" style="height:100%; width:100%; box-sizing:border-box"></textarea>
+                    <div style="
+                    text-align:left;
+                    ">
+                    <input type="submit" value="Submit" style="margin-top:10px;">
+                </div>
+                </div>
+                    
+            </div> <!--Form container-->
+
+        </form>
+    </div>    <!-- contact me section -->
 
 
 

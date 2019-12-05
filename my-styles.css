@@ -13,29 +13,18 @@ h1 {
   color: blue;
 }
 
-.container {
-  padding: 5px;
-  text-align: center;
-  font-size: 3vw;
-  color: #ffeead;
-  box-sizing: border-box;
-  list-style-type: none;
 
-  display: flex;
-  justify-content: center;
-  }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /* overflow: hidden;  This was the original */
-  overflow:scroll;
-  background-color: black;
+  overflow: hidden;
+  background-color: #333;
 }
 
 li {
-  float: center;
+  float: left;
 }
 
 /* Developer Info */
@@ -76,7 +65,7 @@ a {
 }
 
 a:visited {color:purple;}
-a:hover {color: white;}
+a:hover {color: black;}
 a:active {color: blue;}
 
 

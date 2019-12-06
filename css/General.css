@@ -10,6 +10,11 @@ body {
     font-size: 16px;
 }
 
+
+h1 {  color: blue;}
+
+h2 {text-align:center}
+
 .section {
   background-color: #f8f9fa;
   outline-style: solid;
@@ -17,13 +22,9 @@ body {
 
 .section-headers {
   text-align:center; padding:10px;
- 
 }
 
 
-h1 {  color: blue;}
-
-h2 {text-align:center}
 
 
 /* Fading animation */

@@ -57,7 +57,7 @@
                     </div>
                     
                     <!-- images below -->
-                    <img class="slide1 mySlides fade" src="images/JD in Abbey.jpg">
+                    <img class="slide1 mySlides fade" src="Images/JD in Abbey.jpg">
                     <img class="mySlides fade" src="Images/Network Logos.png ">
                     <img class="mySlides fade" src="Images/James Daniels Construction DOH HQ.jpg">
                     <img class="mySlides fade" src="Images/DOH Scandal.png"> 
@@ -133,49 +133,18 @@
         </div>
         <form action="/action_page.php" class="form-container" style="
             padding: 10px;
-            
             ">
-
-            <div class="form-container" style="
-                        background-color: blue;
-                        display:flex; 
-                        flex-direction: row; 
-                        align-items: flex-start; 
-                        justify-content: center;
-                        flex-flow: row wrap;
-                        
-                        "
-                        >
-            <!--    Display:Flex makes it responsive to width change
-                    Flex-direction is row by default
-                    align-items: flex-start; Adjusts vertically. flex-start would be to top left? Alternatively center would have moved to the middle left. Justify-content is for horizontal adjustments.
-                    justify-content: space-around; I HAVEN'T USED THIS BUT WOULD ARRANGE HORIZONTALLY WITH EVEN SPACING
-                    align-self:flex-start; NOT USED. THIS WOULD TAKE A SPECIFIC ITEM AND SAY TO ALIGN AT THE TOP OF THE ROW.
-                    
-                -->
-                <div class="form-name-email" style="
-                background-color: gray;
-                text-align:left;
-                width: 390px;
-                padding: 10px;
-                display:flex;
-                ">
+            <div class="form-container">
+                <div class="form-name-email">
                 <!-- margin: auto; REMOVED. It was centering everything vertically, but name/email/subject weren't lined up nicely -->
                 <!--   <label for="name">Name</label> -->
                     <input type="text" id="name" name="name" placeholder="Your Name">
                 <!--    <label for="email">email</label> -->
                     <input type="text" id="email" name="email" placeholder="Your Email" style="margin-left:auto;">
                 </div>
-                <div class="form-message" style="
-                background-color: teal;
-                height: 100px;
-                width: 390px;
-                display: flex;
-                flex-direction:column;
-                padding: 10px;
-                ">
+                <div class="form-message">
                 <!--   <label for="subject">Subject</label> -->
-                    <textarea id="subject" name="subject" placeholder="Message" style="height:100%; width:100%; box-sizing:border-box"></textarea>
+                    <textarea id="subject" name="subject" placeholder="Message" ></textarea>
                     <div style="
                     text-align:left;
                     ">

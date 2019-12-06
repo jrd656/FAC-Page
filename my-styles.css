@@ -336,7 +336,41 @@ a:active {color: blue;}
     border-color:green;
     border-style: solid;
     border-width: 1px;
-
-
 }
 
+.form-container {
+                        background-color: blue;
+                        display:flex; 
+                        flex-direction: row; 
+                        align-items: flex-start; 
+                        justify-content: center;
+                        flex-flow: row wrap;
+                        /* max-width: 350px; */
+}
+/* Display:Flex makes it responsive to width change
+Flex-direction is row by default
+align-items: flex-start; Adjusts vertically. flex-start would be to top left? Alternatively center would have moved to the middle left. Justify-content is for horizontal adjustments.
+justify-content: space-around; I HAVEN'T USED THIS BUT WOULD ARRANGE HORIZONTALLY WITH EVEN SPACING
+align-self:flex-start; NOT USED. THIS WOULD TAKE A SPECIFIC ITEM AND SAY TO ALIGN AT THE TOP OF THE ROW. */
+
+.form-name-email {
+  background-color: gray;
+  text-align:left;
+  width: 320px;
+  padding: 10px;
+  display:flex;
+  max-width: 350px; 
+}
+
+.form-message {
+  background-color: teal;
+  height: 100px;
+  width: 320px;
+  display: flex;
+  flex-direction:column;
+  padding: 10px;
+}
+
+#subject {
+  height:100%; width:100%; box-sizing:border-box;
+}

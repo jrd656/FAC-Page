@@ -364,6 +364,7 @@ align-self:flex-start; NOT USED. THIS WOULD TAKE A SPECIFIC ITEM AND SAY TO ALIG
 
 #name, #email {
   width:35%;
+  max-width: 100px;
 }
 
 .form-message {

@@ -5,10 +5,20 @@ html {
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: blue;
+    color: black;
     margin: 5%;
     font-size: 16px;
 }
+
+.section {
+  background-color: #f8f9fa;
+  outline-style: solid;
+}
+
+.section-headers {
+  text-align:center; padding:10px;
+}
+
 
 h1 {
   color: blue;

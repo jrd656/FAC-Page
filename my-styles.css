@@ -339,13 +339,13 @@ a:active {color: blue;}
 }
 
 .form-container {
-                        background-color: blue;
-                        display:flex; 
-                        flex-direction: row; 
-                        align-items: flex-start; 
-                        justify-content: center;
-                        flex-flow: row wrap;
-                        /* max-width: 350px; */
+  background-color: blue;
+  display:flex; 
+  flex-direction: row; 
+  align-items: flex-start; 
+  justify-content: center;
+  flex-flow: row wrap;
+  /* max-width: 350px; */
 }
 /* Display:Flex makes it responsive to width change
 Flex-direction is row by default
@@ -360,6 +360,10 @@ align-self:flex-start; NOT USED. THIS WOULD TAKE A SPECIFIC ITEM AND SAY TO ALIG
   padding: 10px;
   display:flex;
   max-width: 350px; 
+}
+
+#name, #email {
+  width:35%;
 }
 
 .form-message {

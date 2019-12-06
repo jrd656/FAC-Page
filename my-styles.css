@@ -7,6 +7,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: blue;
     margin: 5%;
+    font-size: 16px;
 }
 
 h1 {
@@ -29,7 +30,8 @@ li {
 
 /* Developer Info */
   .developer-info {
-    
+    position: fixed;
+    bottom: 0;
   }
 
   #developer-ul {
@@ -217,23 +219,19 @@ a:active {color: blue;}
   
   .pause-btn {
     cursor: pointer;
-  
     position: absolute;
     bottom: 15%;
     left: 50%;
-    transform: translate(-50%, 0%);
-  
+    transform: translate(-50%, 0%);  
     text-align: center;
     padding: 3px 8px 4px 8px;
-    font-size: 12px;
-  
+    font-size: 12px;  
     background-color: rgba(17, 17, 17, 0.267);
     color: white;
     border-radius: 10px;
     border-color: rgba(207, 207, 207, 0.774);
     border-width: 2px;
     border-style: solid;
-
     z-index: 3;
   }
   
@@ -353,27 +351,47 @@ align-items: flex-start; Adjusts vertically. flex-start would be to top left? Al
 justify-content: space-around; I HAVEN'T USED THIS BUT WOULD ARRANGE HORIZONTALLY WITH EVEN SPACING
 align-self:flex-start; NOT USED. THIS WOULD TAKE A SPECIFIC ITEM AND SAY TO ALIGN AT THE TOP OF THE ROW. */
 
+input, select, textarea, button {font-family:inherit; font-size: inherit;}
+
 .form-name-email {
   background-color: gray;
-  text-align:left;
-  width: 320px;
-  padding: 10px;
-  display:flex;
-  max-width: 350px; 
+  /* padding: 10px; */
+  box-sizing: border-box;
+  text-align: center;
+
+  flex-flow: row wrap;
+  
 }
 
-#name, #email {
-  width:35%;
-  max-width: 100px;
+#name, #email, #message {
+  min-width: 300px;
+  box-sizing:border-box;
+  margin: 0.2em;  
 }
 
-.form-message {
+#email {
+  /* margin-left:auto; */
+}
+
+#message {
+  height: 5em;
+}
+
+.form-message-div {
   background-color: teal;
-  height: 100px;
-  width: 320px;
+  box-sizing: border-box;
+  text-align: center;
+
+  height: auto;
+  /* min-width: 300px; */
   display: flex;
   flex-direction:column;
-  padding: 10px;
+  /* margin: 0.2em; */
+  /* max-width: 350px;  */
+}
+
+.submit-button-div {
+  text-align:center;
 }
 
 #subject {

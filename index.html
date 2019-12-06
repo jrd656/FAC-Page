@@ -22,7 +22,7 @@
          </ul>
     </p> <!-- Menu Bar -->
 
-    <p class="developer-info">  <!-- Developer info -->
+    <p class="developer-info" style="width:100%; position: fixed; bottom:0;">  <!-- Developer info -->
         <ul id="developer-ul">
             <li id="lastModified" class="dev-li">Last modified?</li>
             <li id="lastRefresh" class="dev-li">Time at refresh?</li>
@@ -131,25 +131,21 @@
                 <h2>Contact Me</h2>
                 <p>Send me an email to jrd656@gmail.com or use this form:</p>
         </div>
-        <form action="/action_page.php" class="form-container" style="
-            padding: 10px;
-            ">
+        <form action="/action_page.php" class="form-container">
             <div class="form-container">
                 <div class="form-name-email">
                 <!-- margin: auto; REMOVED. It was centering everything vertically, but name/email/subject weren't lined up nicely -->
                 <!--   <label for="name">Name</label> -->
                     <input type="text" id="name" name="name" placeholder="Your Name">
                 <!--    <label for="email">email</label> -->
-                    <input type="text" id="email" name="email" placeholder="Your Email" style="margin-left:auto;">
+                    <input type="text" id="email" name="email" placeholder="Your Email">
                 </div>
-                <div class="form-message">
+                <div class="form-message-div">
                 <!--   <label for="subject">Subject</label> -->
-                    <textarea id="subject" name="subject" placeholder="Message" ></textarea>
-                    <div style="
-                    text-align:left;
-                    ">
-                    <input type="submit" value="Submit" style="margin-top:10px;">
-                </div>
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                    <div class="submit-button-div">
+                        <input type="submit" value="Submit" style="margin-top:10px;">
+                    </div>
                 </div>
                     
             </div> <!--Form container-->

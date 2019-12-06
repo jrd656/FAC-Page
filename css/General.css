@@ -1,0 +1,76 @@
+html {
+
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin: 0%;
+    font-size: 16px;
+}
+
+.section {
+  background-color: #f8f9fa;
+  outline-style: solid;
+}
+
+.section-headers {
+  text-align:center; padding:10px;
+ 
+}
+
+
+h1 {  color: blue;}
+
+h2 {text-align:center}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+a {
+    text-decoration: none;
+    color:blue;
+}
+
+a:visited {color:purple;}
+a:hover {color: black;}
+a:active {color: blue;}
+

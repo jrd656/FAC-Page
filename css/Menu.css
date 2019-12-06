@@ -1,0 +1,35 @@
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    font-size: 4vw;
+}
+
+
+
+/* Developer Info */
+.developer-info {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    display:block;
+    text-align: center;
+    width:90%;
+  }
+
+  #developer-ul {
+    display: block;
+    text-align: center;
+    color: white !important;
+    outline-style: solid;
+    width:90%;
+  }
+
+  .dev-li {
+    margin: 5px;
+    padding:0.5em;
+    outline-style: solid;
+    outline-color: grey;
+    width:95%;
+    font-size: 0.8em;
+  }

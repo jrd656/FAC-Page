@@ -23,7 +23,6 @@
     /* background-color: gray; */
     box-sizing: border-box;
     text-align: center;
-  
     flex-flow: row wrap;
 
     /* width: 100%;
@@ -31,12 +30,20 @@
     margin:0;
     border:0; */
     }
+
+  .form-message-div {
+    box-sizing: border-box;
+    text-align: center;
+    flex-flow: row wrap;
+    width:100%;
+  }
+    
   
   #name, #email, #message {
     width:95%;
     min-width: 300px;
     box-sizing:border-box;
-    margin: 0.2em;  
+
 
     padding:0.3em;
     margin:0.2em; 
@@ -45,16 +52,17 @@
   }
   
   #name, #email {
-    /* width: 95%; */
+
   }
   
   #message {
-    height: 5em;
+    height: 6em;
   }
 
   .form-submit-button {
     border:0.1em solid #ced4da;
     border-radius: 0.3rem;
+    margin: 1rem
     }
 
   .form-submit-button:hover {
@@ -62,19 +70,6 @@
     }
 
   .form-submit-button:focus {outline:0;}
-  
-  .form-message-div {
-    /* background-color: teal; */
-    box-sizing: border-box;
-    text-align: center;
-  
-    height: auto;
-    display: block;
-    /* display: flex; */
-    flex-direction:column;
-
-    width: 100%;
-  }
   
   .submit-button-div {
     text-align:center;

@@ -26,20 +26,13 @@
          </ul>
     </div> <!-- Menu Bar -->
 
-    <div class="developer-info" style="width:100%; position: fixed; bottom:0;">  <!-- Developer info -->
-        <ul id="developer-ul">
-            <li id="lastModified" class="dev-li">Last modified?</li>
-            <li id="lastRefresh" class="dev-li">Time at refresh?</li>
-            <li id="screenWidth" class="dev-li">Screen width</li>
-        </ul>   
-    </div>  <!-- Developer info -->
-
     <h1>James Daniels</h1>
-    <p id="about-me-section-id">
-        <h2>About Me</h2>
-            <p class="about-me">Hi, I'm James and I'm pursuing a career in coding. I previously spent 8 years working in the construction and civil engineering industry. Since July 2019 I've been exploring the world of software development, doing online courses on FreeCodeCamp, Codecademy; completing challenges on CodeWars; and developing my own webpages on Visual Studio Code. During this time, I've taken up professional dog walking and domestic cleaning to give me the funds and also the spare time to pursue my coding dream.</p>
 
-
+    <div class="about-me-section section" id="contact-me-section-id" >
+        <div class="section-headers">
+            <h2>About Me</h2>
+            <p>Hi, I'm James and I'm pursuing a career in coding. I previously spent 8 years working in the construction and civil engineering industry. Since July 2019 I've been exploring the world of software development, doing online courses on FreeCodeCamp, Codecademy; completing challenges on CodeWars; and developing my own webpages on Visual Studio Code. During this time, I've taken up professional dog walking and domestic cleaning to give me the funds and also the spare time to pursue my coding dream.</p>
+        </div>
             <!-- carousel container -->
             <div  class="JD-slideshowcontainer " title="Use left arrow, right arrow, and 'p' to control slides." style="max-width:500px">
                 
@@ -79,11 +72,12 @@
                             <span class="JD-badge dot " onclick="currentDiv(3)"></span>
                             <span class="JD-badge dot " onclick="currentDiv(3)"></span>
                             <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                            </div>
+                        </div> <!-- dots -->
                 </div> <!-- carousel -->
-    </p> <!-- About Me -->
-                    
-    <div id="Prerequisuites-section-id">
+            </div> <!-- About Me -->
+
+<!-- Prerequisite Scores Section -->
+    <div id="Prerequisuites-section-id" class="section">
         <h2>Prerequisite Scores</h2>
         <div class="logos-container">
             <a href="https://www.freecodecamp.org/jrd656">
@@ -113,23 +107,9 @@
         </div> <!--logos container-->
     </div> <!--prerequisites section-->
 
-    <ul>
-        <li>Tell us with your code who you are</li> 
-        <li>Demonstrate your learning from the prerequisites</li>
-        <li>Tell us about why you are applying for the programme</li>
-        <li>Contain a link back to the GitHub repo that contains the code for your site</li>
-        <li>Contain links to your freeCodeCamp (please make sure that your profile is public) and Codewars pages</li>
-        <li>Include an image carousel (the image carousel must be built into your website, a link to a separate page or CodePen will not be accepted)</li>
-        <li>Be hosted on Github
-        <li> Not use a GitHub theme
-        <li>  Not use any JavaScript or CSS libraries like Bootstrap or jQuery or use an image carousel package like Flickity ⁠— we want to see your own code.
-    </ul>
-    
-    <ul>
-        <li>freeCodeCamp - Earn a minimum of 250 points on freeCodeCamp. We recommend beginning with the following sections:</li>
-        <li>Codewars - Reach 5 kyu and 300 honor points in JavaScript on Codewars.</li>
-    </ul>
 
+
+ <!-- contact me section -->
     <div class="contact-me-section section" id="contact-me-section-id" >
         <div class="section-headers">
                 <h2>Contact Me</h2>
@@ -138,14 +118,10 @@
         <form action="/action_page.php" class="form-container">
             <div class="form-container">
                 <div class="form-name-email">
-                <!-- margin: auto; REMOVED. It was centering everything vertically, but name/email/subject weren't lined up nicely -->
-                <!--   <label for="name">Name</label> -->
                     <input type="text" id="name" name="name" placeholder="Your Name">
-                <!--    <label for="email">email</label> -->
                     <input type="text" id="email" name="email" placeholder="Your Email">
                 </div>
                 <div class="form-message-div">
-                <!--   <label for="subject">Subject</label> -->
                     <textarea id="message" name="message" placeholder="Message"></textarea>
                     <div class="submit-button-div">
                         <input type="submit" value="Submit" class="form-submit-button">
@@ -157,7 +133,35 @@
         </form>
     </div>    <!-- contact me section -->
 
+<!-- Section Requirements (can be deleted) -->
+    <div class="section requirements">
+            <ul class="requirements-ul">
+                    <li>freeCodeCamp - Earn a minimum of 250 points on freeCodeCamp. We recommend beginning with the following sections:</li>
+                    <li>Codewars - Reach 5 kyu and 300 honor points in JavaScript on Codewars.</li>
+                <li>Tell us with your code who you are</li> 
+                <li>Demonstrate your learning from the prerequisites</li>
+                <li>Tell us about why you are applying for the programme</li>
+                <li>Contain a link back to the GitHub repo that contains the code for your site</li>
+                <li>Contain links to your freeCodeCamp (please make sure that your profile is public) and Codewars pages</li>
+                <li>Include an image carousel (the image carousel must be built into your website, a link to a separate page or CodePen will not be accepted)</li>
+                <li>Be hosted on Github
+                <li> Not use a GitHub theme
+                <li>  Not use any JavaScript or CSS libraries like Bootstrap or jQuery or use an image carousel package like Flickity ⁠— we want to see your own code.
+            </ul>
+        </div>
+<!-- Section Requirements (can be deleted) -->
 
+    <div class="footer">
+        Footer
+    </div>
+
+    <div class="developer-info" style="width:100%; position: fixed; bottom:0;">  <!-- Developer info -->
+        <ul id="developer-ul">
+            <li id="lastModified" class="dev-li">Last modified?</li>
+            <li id="lastRefresh" class="dev-li">Time at refresh?</li>
+            <li id="screenWidth" class="dev-li">Screen width</li>
+        </ul>   
+    </div>  <!-- Developer info -->
 
 <script src="script.js"></script>
 

@@ -2,6 +2,8 @@ html {
 
 }
 
+/* Minimum width of phones is typically 360, although iphone as narrow as 320.
+Max width is 414, or 800 for tablet */
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;

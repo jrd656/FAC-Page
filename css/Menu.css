@@ -2,10 +2,17 @@
     position: fixed;
     top: 0;
     z-index: 999;
-    font-size: 4vw;
+    font-size: 6vw;
     text-align: center;
     box-sizing: border-box;
     width:100%; 
+    animation: menu;
+    animation-duration: 2s;
+}
+
+@keyframes menu {
+  0% { right:100%; border-radius: 50%;}
+  100% {right:0%; border-radius: 25%}
 }
 
 .hidden-menu {
@@ -23,16 +30,15 @@
     justify-content: space-evenly;
     width:100%;
     box-sizing: border-box; 
+}
 
+.menu-button {
+  width: 25%;
 }
 
 .menu-items > li {
   flex: 1;
 }
-
-.menu-button {
-
-  }
 
 .menu-items {
   flex: 3;
@@ -40,7 +46,9 @@
 }
 
 .hidden-menu ul {
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: red;
+  border-radius: 50%;
 }
 
 .menu a {
@@ -51,18 +59,26 @@
   display:block;
   cursor: pointer;
   margin: 0px 10px 0px 0px;
-  line-height: 150%;
+  line-height: 200%;
 }
 
 .menu-toggle-hide {
-  display: none;
+  /* display: none; */
+  right:100%;
+  animation-name: menuhide;
+  animation-duration: 2s;
 }
+
+@keyframes menuhide {
+  0% { right:00%;}
+  100% {right:100%;}
+}
+
 .hidden-menu-toggle-hide a {
   /* background-color: transparent; */
   color:black;
   text-shadow: 0 0 10px white;
 }
-
 
 /* -------------------- a hovers ------------------------- */
   /* Change the link color to #111 (black) on hover */

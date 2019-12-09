@@ -1,61 +1,89 @@
-.fixed-menu {
+.menu {
     position: fixed;
     top: 0;
     z-index: 999;
     font-size: 4vw;
-
     text-align: center;
     box-sizing: border-box;
-    width:100%;
-    
+    width:100%; 
 }
 
+.hidden-menu {
+  width:auto;
+}
 
-ul {
-    list-style-type: none;
+.menu ul {
+    list-style-type: none; /*removes bullet points,etc */
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-
-    /* border: 5px solid #ffcc5c; */
+    background-color: #111;
     display: flex;
     justify-content: space-evenly;
     width:100%;
     box-sizing: border-box; 
+
+}
+
+.menu-items > li {
+  flex: 1;
+}
+
+.menu-button {
+
   }
-  
-  li {
-    float: left;
-    
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 1vw 1wv;
-    text-decoration: none;
-  }
-  
+
+.menu-items {
+  flex: 3;
+  display: flex;
+}
+
+.hidden-menu ul {
+  background-color: transparent;
+}
+
+.menu a {
+  text-decoration: none;
+  color:white;
+  width: 100%; 
+  height:100%;
+  display:block;
+  cursor: pointer;
+  margin: 0px 10px 0px 0px;
+}
+
+.menu-toggle-hide {
+  display: none;
+}
+.hidden-menu-toggle-hide a {
+  /* background-color: transparent; */
+  color:black;
+  text-shadow: 0 0 10px white;
+}
+
+
+/* -------------------- a hovers ------------------------- */
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
+  .menu a:hover {
+    background-color: #333;
   }
   
-  a {
-      text-decoration: none;
-      color:blue;
+  .hidden-menu-toggle-hide a:hover {
+    text-shadow: 0 0 10px black;
+    background-color: transparent;
   }
   
-  a:visited {color:purple;}
-  a:hover {color: black;}
+  /* a:visited {color:white;}
+  a:hover {color: black;} */
   a:active {color: blue;}
   
 
 
 
-/* Developer Info */
+
+
+
+/* ----------------- Developer Info ------------------- */
 .developer-info {
     position: fixed;
     bottom: 0;
@@ -63,13 +91,14 @@ ul {
     display:block;
     text-align: center;
     width:100%;
+    background-color: black;
+    color: white;
     /* display: none; */
   }
 
   #developer-ul {
     display: block;
     text-align: center;
-    color: white !important;
     outline-style: solid;
     width:100%;
   }

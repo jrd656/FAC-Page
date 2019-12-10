@@ -1,6 +1,6 @@
 //js for carousel
 var myIndex = 0;
-var defaultInterval = 2500;
+var defaultInterval = 700;
 var slideInterval = setInterval(carousel,defaultInterval);
 
 

@@ -43,47 +43,54 @@
             <h2>About Me</h2>
         </div>
             <!-- carousel container -->
-        <div  class="JD-slideshowcontainer " title="Use left arrow, right arrow, and 'p' to control slides." style="max-width:500px">
-                <!-- captions -->
-                <div class = "caption-containers caption1 top-left-container">
-                    <div class="caption-text top-left-cap">1 Hi, I'm James and I'm pursuing a career in coding. </div>
-                </div>
-                <div class = "caption-containers top-right-container">
-                    <div class="caption-text top-right-cap" style="left:25%">2 Since July 2019 I've been exploring the world of software development</div>
-                </div>
-                <div class = "caption-containers top-right-container">    
-                    <div class="caption-text top-right-cap" style="top:5%; right:5%">I previously spent 8 years working in the construction and civil engineering industries.</div>
-                </div>
-                <div class = "caption-containers top-left-container">
-                        <div class="caption-text top-left-cap" style="top:15%; left:25%">Working on some high profile projects in the UK and the Middle East.</div>
-                        <div class="caption-text top-right-cap" style="left: 100%; top:15%; transform: translate(85%)">(It's the same bathroom!) </div>
-                </div>
-                <div class = "caption-containers top-right-container" style="height:25%; background-image: linear-gradient(210deg,rgba(0, 0, 0, 0.082) ,transparent);">
-                        <div class="caption-text top-right-cap" style="top:5%; left:50%;">(SCANDAL!) </div>
-                </div>
-                
-                <!-- images below -->
+        <div  class="carousel-container " title="Use left arrow, right arrow, and 'p' to control slides.">
+            
+            <!-- left and right arrow buttons below -->
+            <div class="arrows prev" onclick="plusDivs(-1)" title="(press left arrow key)">&#10094;</div>
+            <div class="arrows next" onclick="plusDivs(1)" title="(press right arrow key)">&#10095;</div>
+            <!-- pause button below, arrows above -->
+            <button class="pause-btn" id="pause" title="(press 'p key to play/pause)">&#9616;&nbsp;&#9612</button>
+            <!-- dots  -->
+            <div class="dot-container">
+                <span class="JD-badge dot" onclick="currentDiv(1)"></span>
+                <span class="JD-badge dot" onclick="currentDiv(2)"></span>
+                <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+            </div> <!-- dots -->
+            
+            <!-- images below -->
+            <div class="image-div-container">
                 <img class="slide1 mySlides fade" src="Images/JD in Abbey.jpg">
                 <img class="mySlides fade" src="Images/Network Logos.png ">
                 <img class="mySlides fade" src="Images/James Daniels Construction DOH HQ.jpg">
                 <img class="mySlides fade" src="Images/DOH Scandal.png"> 
                 <img class="mySlides fade" src="Images/S*n Zoom.png">
-                
-                <!-- left and right arrow buttons below -->
-                <div class="arrows prev" onclick="plusDivs(-1)" title="(press left arrow key)">&#10094;</div>
-                <div class="arrows next" onclick="plusDivs(1)" title="(press right arrow key)">&#10095;</div>
-                    <!-- pause button below, arrows above -->
-                    <button class="pause-btn" id="pause" title="(press 'p key to play/pause)">&#9616;&nbsp;&#9612</button>
-                    
-                    <div class="dot-container">
-                        <span class="JD-badge dot" onclick="currentDiv(1)"></span>
-                        <span class="JD-badge dot" onclick="currentDiv(2)"></span>
-                        <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                        <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                        <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                    </div> <!-- dots -->
-            </div> <!-- carousel -->
-        </div> <!-- About Me -->
+            </div>
+
+
+            <!-- captions -->
+            <div class="div-for-captions">
+                <div class = "caption-containers caption1 top-left-container">
+                    <div class="caption-text ">1 Hi, I'm James and I'm pursuing a career in coding. </div>
+                </div>
+                <div class = "caption-containers top-right-container">
+                    <div class="caption-text " >2 Since July 2019 I've been exploring the world of software development</div>
+                </div>
+                <div class = "caption-containers top-right-container">    
+                    <div class="caption-text " >I previously spent 8 years working in the construction and civil engineering industries.</div>
+                </div>
+                <div class = "caption-containers ">
+                        <div class="caption-text " >Working on some high profile projects in the UK and the Middle East.</div>
+                        <div class="caption-text ">(It's the same bathroom!) </div>
+                </div>
+                <div class = "caption-containers " >
+                        <div class="caption-text ">(SCANDAL!) </div>
+                </div>
+            </div> <!-- captions above -->
+
+            </div> <!-- carousel container -->
+        </div> <!-- About Me Section -->
 
 <!-- Prerequisite Scores Section -->
     <div id="Prerequisuites-section-id" class="section">

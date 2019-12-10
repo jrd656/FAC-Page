@@ -1,87 +1,71 @@
 
-  .JD-slideshowcontainer {
-    max-width: 800px;
-    min-height: 200px;
+  .carousel-container {
+    /* border: solid 5px red; */
+    /* max-width: 800px;
+    min-height: 200px; */
     margin: auto;
-    position:relative;
-    margin-bottom: 40px;
-    background-color: black;
+    background-color: #282828;
+    width:95%;
+    display: flex;
+    flex-direction: column;
 
-    width:100%;
+    position: relative;
+
+    border-radius: 2%;
+    box-sizing:border-box;
+    height: 90vw;
   }
 
-  .mySlides {
-    display:none;
-    object-fit:contain;
-    max-height: 200px;
-      
-      width: 100%;
-      height: 400px;
-      vertical-align: middle;
-      
-      }
-  .slide1 {display:block;}
+.image-div-container {
+    /* border: solid 5px blue; */
+    background-color: #121212;
+    flex:16;
+    width:95%;
+    /* height: 80vw; */
+    box-sizing:border-box;
+    margin:auto;
+    display:flex;
+}
+    .mySlides {
+        /* border: solid 5px pink; */
+        box-sizing:border-box;
+        display:none;
+        /* object-fit:contain; */
+        object-fit: scale-down;
+        max-height: 180px;
+        width: 90%;
+        /* height: 400px; */
+        /* vertical-align: middle; */
+        margin:auto;
+    }
+    .slide1 {display:inline-block;}
+
+.div-for-captions {
+    border: solid 5px yellow;
+    box-sizing:border-box;
+    flex:10;
+    position: relative;
+    width:90%; 
+    margin:auto;
+    overflow: visible;
+}
 
   .caption-containers {
-      position:absolute;
-      height: 100%;
-      width: 50%;
-      display: none;
-      z-index: 1;
+    border: green 5px solid;
+    position:relative;
+    height: 95%;
+    width: 95%;
+    display: none;
+    z-index: 1;
+    margin:auto;
   }
 
   .caption-text {
       color: white;
       font-size: 15px;
       text-shadow: 0px 0px 8px black;
-      position: absolute;
+      /* position: absolute; */
   }
-
-  .top-left-container {
-      background-image: linear-gradient(to right,rgba(0, 0, 0, 0.76) ,transparent);} 
-  .top-right-container {
-      right: 0;
-      background-image: linear-gradient(to left,rgba(0, 0, 0, 0.76) ,transparent);} 
-  
-  .top-left-cap {
-      text-align: left;
-      top: 10%;
-      right:20%;
-      width: 40%;
-  }
-
-  .top-right-cap {
-      text-align: right;
-      top: 10%;
-      left:10%;
-      width: 40%;
-  }
-
-  /* Some center tests */ 
-  .test1  {
-background-color: #0074D9;
-width: 100px;
-height: 100px;
-display: inline-block;
-}
-
-.test2 {
-background-color: #FFDC00;
-width: 100px;
-height: 100px;
-margin: 0 auto;
-}
-
-.test3 {
-background-color: #3D9970;
-width: 100px;
-height: 100px;
-position: absolute;
-left: 50%;
-margin-left: -50px;
-}
-
-
 
   .caption1 {
   display:block;
@@ -97,7 +81,7 @@ margin-left: -50px;
   text-shadow: 0px 0px 8px #202020;
 
   position: absolute;
-  top: 50%;
+  top: 40%;
 
   transition: 0.6s ease;
   border-radius: 100%;
@@ -125,7 +109,7 @@ margin-left: -50px;
 .pause-btn {
   cursor: pointer;
   position: absolute;
-  bottom: 15%;
+  bottom: 25%;
   left: 50%;
   transform: translate(-50%, 0%);  
   text-align: center;
@@ -149,7 +133,7 @@ button:focus {outline:0;}
 
 .dot-container {
   position: absolute;
-  bottom: 1%;
+  bottom: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -178,3 +162,50 @@ button:focus {outline:0;}
   background-color: white;
   color: white;
 }
+
+
+
+.top-left-container {
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.76) ,transparent);} 
+.top-right-container {
+    right: 0;
+    background-image: linear-gradient(to left,rgba(0, 0, 0, 0.76) ,transparent);} 
+
+.top-left-cap {
+    text-align: left;
+    top: 10%;
+    right:20%;
+    width: 40%;
+}
+
+.top-right-cap {
+    text-align: right;
+    top: 10%;
+    left:10%;
+    width: 40%;
+}
+
+/* Some center tests */ 
+.test1  {
+background-color: #0074D9;
+width: 100px;
+height: 100px;
+display: inline-block;
+}
+
+.test2 {
+background-color: #FFDC00;
+width: 100px;
+height: 100px;
+margin: 0 auto;
+}
+
+.test3 {
+background-color: #3D9970;
+width: 100px;
+height: 100px;
+position: absolute;
+left: 50%;
+margin-left: -50px;
+}
+

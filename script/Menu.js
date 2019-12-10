@@ -1,3 +1,4 @@
+//js for hiding and showing the menu
 //add event listener for click
 document.querySelector('.menu-button')  
   .addEventListener('click', classToggle);

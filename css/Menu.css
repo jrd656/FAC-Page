@@ -1,6 +1,6 @@
 .menu {
     position: fixed;
-    top: 0;
+    bottom: 0;
     z-index: 999;
     font-size: 6vw;
     text-align: center;
@@ -53,7 +53,7 @@
 
 .menu a {
   text-decoration: none;
-  color:white;
+  color:#b3b3b3;
   width: 100%; 
   height:100%;
   display:block;
@@ -100,32 +100,3 @@
 
 
 
-
-/* ----------------- Developer Info ------------------- */
-.developer-info {
-    position: fixed;
-    bottom: 0;
-    z-index: 999;
-    display:block;
-    text-align: center;
-    width:100%;
-    background-color: black;
-    color: white;
-    /* display: none; */
-  }
-
-  #developer-ul {
-    display: block;
-    text-align: center;
-    outline-style: solid;
-    width:100%;
-  }
-
-  .dev-li {
-    margin: 5px;
-    padding:0.5em;
-    outline-style: solid;
-    outline-color: grey;
-    width:95%;
-    font-size: 0.8em;
-  }

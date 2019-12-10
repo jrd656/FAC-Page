@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/Menu.css">
     <link rel="stylesheet" href="css/Slideshow.css">
     <link rel="stylesheet" href="css/General.css">
+    <link rel="stylesheet" href="css/Scores.css">
+    <link rel="stylesheet" href="css/DevInfo.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -33,55 +35,55 @@
         </ul>
     </div>
 
-    <h1>James Daniels</h1>
+    <!-- <h1></h1> -->
+    <!-- <p>Hi, I'm James and I'm pursuing a career in coding. I previously spent 8 years working in the construction and civil engineering industry. Since July 2019 I've been exploring the world of software development, doing online courses on FreeCodeCamp, Codecademy; completing challenges on CodeWars; and developing my own webpages on Visual Studio Code. During this time, I've taken up professional dog walking and domestic cleaning to give me the funds and also the spare time to pursue my coding dream.</p> -->
 
     <div class="about-me-section section" id="about-me-section" >
         <div class="section-headers">
             <h2>About Me</h2>
-            <p>Hi, I'm James and I'm pursuing a career in coding. I previously spent 8 years working in the construction and civil engineering industry. Since July 2019 I've been exploring the world of software development, doing online courses on FreeCodeCamp, Codecademy; completing challenges on CodeWars; and developing my own webpages on Visual Studio Code. During this time, I've taken up professional dog walking and domestic cleaning to give me the funds and also the spare time to pursue my coding dream.</p>
         </div>
             <!-- carousel container -->
-            <div  class="JD-slideshowcontainer " title="Use left arrow, right arrow, and 'p' to control slides." style="max-width:500px">
+        <div  class="JD-slideshowcontainer " title="Use left arrow, right arrow, and 'p' to control slides." style="max-width:500px">
+                <!-- captions -->
+                <div class = "caption-containers caption1 top-left-container">
+                    <div class="caption-text top-left-cap">1 Hi, I'm James and I'm pursuing a career in coding. </div>
+                </div>
+                <div class = "caption-containers top-right-container">
+                    <div class="caption-text top-right-cap" style="left:25%">2 Since July 2019 I've been exploring the world of software development</div>
+                </div>
+                <div class = "caption-containers top-right-container">    
+                    <div class="caption-text top-right-cap" style="top:5%; right:5%">I previously spent 8 years working in the construction and civil engineering industries.</div>
+                </div>
+                <div class = "caption-containers top-left-container">
+                        <div class="caption-text top-left-cap" style="top:15%; left:25%">Working on some high profile projects in the UK and the Middle East.</div>
+                        <div class="caption-text top-right-cap" style="left: 100%; top:15%; transform: translate(85%)">(It's the same bathroom!) </div>
+                </div>
+                <div class = "caption-containers top-right-container" style="height:25%; background-image: linear-gradient(210deg,rgba(0, 0, 0, 0.082) ,transparent);">
+                        <div class="caption-text top-right-cap" style="top:5%; left:50%;">(SCANDAL!) </div>
+                </div>
                 
-                    <div class = "caption-containers caption1 top-left-container">
-                        <div class="caption-text top-left-cap">1 Hi, I'm James and I'm pursuing a career in coding. </div>
-                    </div>
-                    <div class = "caption-containers top-right-container">
-                        <div class="caption-text top-right-cap" style="left:25%">2 Since July 2019 I've been exploring the world of software development</div>
-                    </div>
-                    <div class = "caption-containers top-right-container">    
-                        <div class="caption-text top-right-cap" style="top:5%; right:5%">I previously spent 8 years working in the construction and civil engineering industries.</div>
-                    </div>
-                    <div class = "caption-containers top-left-container">
-                            <div class="caption-text top-left-cap" style="top:15%; left:25%">Working on some high profile projects in the UK and the Middle East.</div>
-                            <div class="caption-text top-right-cap" style="left: 100%; top:15%; transform: translate(85%)">(It's the same bathroom!) </div>
-                    </div>
-                    <div class = "caption-containers top-right-container" style="height:25%; background-image: linear-gradient(210deg,rgba(0, 0, 0, 0.082) ,transparent);">
-                            <div class="caption-text top-right-cap" style="top:5%; left:50%;">(SCANDAL!) </div>
-                    </div>
+                <!-- images below -->
+                <img class="slide1 mySlides fade" src="Images/JD in Abbey.jpg">
+                <img class="mySlides fade" src="Images/Network Logos.png ">
+                <img class="mySlides fade" src="Images/James Daniels Construction DOH HQ.jpg">
+                <img class="mySlides fade" src="Images/DOH Scandal.png"> 
+                <img class="mySlides fade" src="Images/S*n Zoom.png">
+                
+                <!-- left and right arrow buttons below -->
+                <div class="arrows prev" onclick="plusDivs(-1)" title="(press left arrow key)">&#10094;</div>
+                <div class="arrows next" onclick="plusDivs(1)" title="(press right arrow key)">&#10095;</div>
+                    <!-- pause button below, arrows above -->
+                    <button class="pause-btn" id="pause" title="(press 'p key to play/pause)">&#9616;&nbsp;&#9612</button>
                     
-                    <!-- images below -->
-                    <img class="slide1 mySlides fade" src="Images/JD in Abbey.jpg">
-                    <img class="mySlides fade" src="Images/Network Logos.png ">
-                    <img class="mySlides fade" src="Images/James Daniels Construction DOH HQ.jpg">
-                    <img class="mySlides fade" src="Images/DOH Scandal.png"> 
-                    <img class="mySlides fade" src="Images/S*n Zoom.png">
-                    
-                    <!-- left and right arrow buttons below -->
-                    <div class="arrows prev" onclick="plusDivs(-1)" title="(press left arrow key)">&#10094;</div>
-                    <div class="arrows next" onclick="plusDivs(1)" title="(press right arrow key)">&#10095;</div>
-                        <!-- pause button below, arrows above -->
-                        <button class="pause-btn" id="pause" title="(press 'p key to play/pause)">&#9616;&nbsp;&#9612</button>
-                        
-                        <div class="dot-container">
-                            <span class="JD-badge dot" onclick="currentDiv(1)"></span>
-                            <span class="JD-badge dot" onclick="currentDiv(2)"></span>
-                            <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                            <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                            <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                        </div> <!-- dots -->
-                </div> <!-- carousel -->
-            </div> <!-- About Me -->
+                    <div class="dot-container">
+                        <span class="JD-badge dot" onclick="currentDiv(1)"></span>
+                        <span class="JD-badge dot" onclick="currentDiv(2)"></span>
+                        <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                        <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                        <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                    </div> <!-- dots -->
+            </div> <!-- carousel -->
+        </div> <!-- About Me -->
 
 <!-- Prerequisite Scores Section -->
     <div id="Prerequisuites-section-id" class="section">
@@ -116,7 +118,7 @@
 
 
 
- <!-- contact me section -->
+<!-- contact me section -->
     <div class="contact-me-section section" id="contact-me-section-id" >
         <div class="section-headers">
                 <h2>Contact Me</h2>
@@ -157,6 +159,7 @@
             </ul>
         </div>
 <!-- Section Requirements (can be deleted) -->
+    <div class="trying">SOMETEXT</div>
 
     <div class="footer">
         Footer
@@ -170,10 +173,13 @@
         </ul>   
     </div>  <!-- Developer info -->
 
+
+
 <!-- <script src="script.js"></script> -->
 <script src="script/script.js"></script>
 <script src="script/dev.js"></script>
 <script src="script/Menu.js"></script>
+<script src="script/Carousel.js"></script>
 
 
 </body>

@@ -37,6 +37,15 @@
 }
 
 .menu-items > li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+  display: flex;
+  justify-content: space-evenly;
+  width:100%;
+  box-sizing: border-box; 
   flex: 1;
 }
 
@@ -46,8 +55,8 @@
 }
 
 .hidden-menu ul {
-  /* background-color: transparent; */
-  background-color: red;
+  background-color: transparent;
+  /* background-color: red; */
   border-radius: 50%;
 }
 
@@ -64,7 +73,7 @@
 
 .menu-toggle-hide {
   /* display: none; */
-  right:100%;
+  right:110%;
   animation-name: menuhide;
   animation-duration: 2s;
 }
@@ -76,14 +85,14 @@
 
 .hidden-menu-toggle-hide a {
   /* background-color: transparent; */
-  color:black;
+  color:silver;
   text-shadow: 0 0 10px white;
 }
 
 /* -------------------- a hovers ------------------------- */
   /* Change the link color to #111 (black) on hover */
   .menu a:hover {
-    background-color: #333;
+    /* background-color: #333; */
   }
   
   .hidden-menu-toggle-hide a:hover {
@@ -93,7 +102,7 @@
   
   /* a:visited {color:white;}
   a:hover {color: black;} */
-  a:active {color: blue;}
+  /* a:active {color: blue;} */
   
 
 

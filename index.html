@@ -8,11 +8,11 @@
     <title>Founders and Coders Web Page - James Daniels</title>
     <link rel="stylesheet" href="css/my-styles.css">
     <link rel="stylesheet" href="css/Forms.css">
-    <link rel="stylesheet" href="css/Menu.css">
     <link rel="stylesheet" href="css/Slideshow.css">
     <link rel="stylesheet" href="css/General.css">
     <link rel="stylesheet" href="css/Scores.css">
     <link rel="stylesheet" href="css/DevInfo.css">
+    <link rel="stylesheet" href="css/Menu.css">
     <link rel="icon" href="favicon.ico">
 </head>
 
@@ -39,9 +39,7 @@
     <!-- <p>Hi, I'm James and I'm pursuing a career in coding. I previously spent 8 years working in the construction and civil engineering industry. Since July 2019 I've been exploring the world of software development, doing online courses on FreeCodeCamp, Codecademy; completing challenges on CodeWars; and developing my own webpages on Visual Studio Code. During this time, I've taken up professional dog walking and domestic cleaning to give me the funds and also the spare time to pursue my coding dream.</p> -->
 
     <div class="about-me-section section" id="about-me-section" >
-        <div class="section-headers">
-            <h2>About Me</h2>
-        </div>
+        <h2>About Me</h2>
             <!-- carousel container -->
         <div  class="carousel-container " title="Use left arrow, right arrow, and 'p' to control slides.">
             
@@ -95,31 +93,45 @@
 <!-- Prerequisite Scores Section -->
     <div id="Prerequisuites-section-id" class="section">
         <h2>Prerequisite Scores</h2>
-        <div class="logos-container">
-            <a href="https://www.freecodecamp.org/jrd656">
-                <div class="logo-container">
-                    <img class="logo-image" src="FCClogo.png" style="width:100%">
+        <div class="logos-container flip-card">
+            <a class="flip-card-inner" href="https://www.freecodecamp.org/jrd656">
+                <div class=" inner-container flip-card-front">
+                    <img class="logo-image" src="Images/FCClogo.png" >
                     <p class="logo-caption">396 points on FreeCodeCamp!</p>
                 </div>
+                <div class="inner-container flip-card-back ">Words
+                </div>
+            </a>
             <a href="https://www.codecademy.com/profiles/jamesDaniels1213407347">
-                <div class="logo-container">
-                    <img class="logo-image" src="Codecademylogo.webp" style="width:100%">
-                    <p class="logo-caption">396 points on FreeCodeCamp!</p>
-                </div>
-            </a>
-            </a>
-            <a href="https://www.freecodecamp.org/jrd656">
-                <div class="logo-container">
-                    <img class="logo-image" src="Codewarslogo.png" style="width:100%">
+                <div class="logo-container inner-container">
+                    <img class="logo-image" src="Images/Codecademylogo.webp" >
                     <p class="logo-caption">396 points on FreeCodeCamp!</p>
                 </div>
             </a>
             <a href="https://www.freecodecamp.org/jrd656">
-                <div class="logo-container">
-                    <img class="logo-image" src="GHlogo.png" style="width:100%">
+                <div class="logo-container inner-container">
+                    <img class="logo-image" src="Images/Codewarslogo.png" >
+                    <p class="logo-caption">396 points on FreeCodeCamp!</p>
+                </div>
+            </a>
+            <a href="https://www.freecodecamp.org/jrd656">
+                <div class="logo-container inner-container">
+                    <img class="logo-image" src="Images/GHlogo.png" >
                     <p class="logo-caption">396 points on FreeCodeCamp!</p>
                 </div>
             </a>    
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                        </div>
+                    </div>
+                </div>
         </div> <!--logos container-->
     </div> <!--prerequisites section-->
 
@@ -151,9 +163,12 @@
 
 <!-- Section Requirements (can be deleted) -->
     <div class="section requirements">
-            <ul class="requirements-ul">
-                    <li>freeCodeCamp - Earn a minimum of 250 points on freeCodeCamp. We recommend beginning with the following sections:</li>
-                    <li>Codewars - Reach 5 kyu and 300 honor points in JavaScript on Codewars.</li>
+        <div class="section-headers">
+                <h2>Requirements</h2>
+        </div>
+            <ul>
+                <li>freeCodeCamp - Earn a minimum of 250 points on freeCodeCamp. We recommend beginning with the following sections:</li>
+                <li>Codewars - Reach 5 kyu and 300 honor points in JavaScript on Codewars.</li>
                 <li>Tell us with your code who you are</li> 
                 <li>Demonstrate your learning from the prerequisites</li>
                 <li>Tell us about why you are applying for the programme</li>
@@ -166,7 +181,6 @@
             </ul>
         </div>
 <!-- Section Requirements (can be deleted) -->
-    <div class="trying">SOMETEXT</div>
 
     <div class="footer">
         Footer
@@ -185,8 +199,8 @@
 <!-- <script src="script.js"></script> -->
 <script src="script/script.js"></script>
 <script src="script/dev.js"></script>
-<script src="script/Menu.js"></script>
 <script src="script/Carousel.js"></script>
+<script src="script/Menu.js"></script>
 
 
 </body>

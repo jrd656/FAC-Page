@@ -12,5 +12,12 @@ function classToggle() {
 
   const hiddennavs = document.querySelectorAll('.hidden-menu')
   hiddennavs.forEach(nav => nav.classList.toggle('hidden-menu-toggle-hide'));
+
+  //hide developer info
+  const devel = document.querySelectorAll('.developer-info')
+  devel.forEach(nav => nav.classList.toggle('menu-toggle-hide'));
+
+  const requir = document.querySelectorAll('.requirements')
+  requir.forEach(nav => nav.classList.toggle('hidden'));
 }
 

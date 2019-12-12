@@ -13,6 +13,7 @@
     font-size: 0.7em;
     padding: 0 0 15vw 0;
     /* display: none; */
+    box-sizing: border-box;
   }
 
   #developer-ul {
@@ -47,3 +48,26 @@
       font-size: 0.7em; */
       display: none;
   }
+
+
+.requirements {
+  /* width: 75%; */
+}
+
+.requirements ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.requirements li {
+  outline-style: solid;
+  font-size: 0.8em;
+  padding: 0.5em;
+  box-sizing: border-box;
+  background-color: maroon;
+  margin:1em;
+}
+
+.hidden {
+  display: none;
+}

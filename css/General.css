@@ -38,37 +38,26 @@ h2 {
 }
 
 .inner-container {
-
   background-color: #282828;
 }
 
 
 ul {
-
   }
-
-
-
-
-
-
 
 .footer {
     padding: 90px 0;
 }
 
-
 /* Fading animation */
-.fade {
-    animation-name: fade;
+.fade-in {
+    animation-name: fade-in;
     animation-duration: 1.5s;
   }
   
-  @keyframes fade {
+  @keyframes fade-in {
     from {opacity: .4}
     to {opacity: 1}
   }
-  
-
 
 

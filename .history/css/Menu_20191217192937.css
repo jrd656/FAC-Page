@@ -26,28 +26,34 @@
   100% {right:0%; border-radius: 25%}
 }
 
-.menu ul {
-  list-style-type: none; /*removes bullet points,etc */
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #111;
-  display: flex;
-  justify-content: space-evenly;
-  width:100%;
-  box-sizing: border-box; 
-}
-
-/* .menu-button {
-  width: 25%;
-} */
-
-
-
   .hidden-menu {
   width:auto;
   z-index: 998;
 }
+
+  .fixed-menu {
+    animation: menu;
+    animation-duration: 2s;
+  }
+
+  .menu ul {
+    list-style-type: none; /*removes bullet points,etc */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    box-sizing: border-box; 
+    z-index: 991;
+}
+
+  div.hidden-menu {
+    width:auto;
+    z-index: 998;
+  }
+
   .menu-button {
     width: 25%;
   }
@@ -65,8 +71,13 @@
   z-index: 992;
 }
 
-.menu-items {
+div.menu-items {
   flex: 16;
+  display: flex;
+}
+
+li.menu-button {
+  flex: 1;
   display: flex;
 }
 
@@ -85,6 +96,7 @@
   cursor: pointer;
   margin: 0px 10px 0px 0px;
   line-height: 200%;
+  z-index: 993;
 }
 
 .menu-toggle-hide {
@@ -94,9 +106,9 @@
   animation-duration: 2s;
 }
 
-@keyframes menuhide {
-  0% { right:00%;}
-  100% {right:100%;}
+a.menu-button-hidden {
+  color:silver;
+  text-shadow: 0 0 10px white;
 }
 
 .hidden-menu-toggle-hide a {
@@ -105,35 +117,21 @@
   text-shadow: 0 0 10px white;
 }
 
-
-
-a.menu-button-hidden {
-  color:silver;
-  text-shadow: 0 0 10px white;
-}
-
-.fixed-menu {
-  animation: menu;
-  animation-duration: 2s;
-}
-
-li.menu-button {
-  flex: 1;
-  display: flex;
-}
-
 }
 
 
 
-
+@keyframes menuhide {
+  0% { right:00%;}
+  100% {right:100%;}
+}
 
 
 
 /* -------------------- a hovers ------------------------- */
   /* Change the link color to #111 (black) on hover */
   .menu a:hover {
-        background-color: #333;
+
   }
 
 

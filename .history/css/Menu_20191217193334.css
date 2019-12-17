@@ -88,26 +88,19 @@
 }
 
 .menu-toggle-hide {
-  display: none;
+  /* display: none; */
   right:110%;
   animation-name: menuhide;
   animation-duration: 2s;
 }
 
-@keyframes menuhide {
-  0% { right:00%;}
-  100% {right:100%;}
-}
-
-.hidden-menu-toggle-hide a {
-  /* background-color: transparent; */
+a.menu-button-hidden {
   color:silver;
   text-shadow: 0 0 10px white;
 }
 
-
-
-a.menu-button-hidden {
+.hidden-menu-toggle-hide a {
+  /* background-color: transparent; */
   color:silver;
   text-shadow: 0 0 10px white;
 }
@@ -126,14 +119,17 @@ li.menu-button {
 
 
 
-
+@keyframes menuhide {
+  0% { right:00%;}
+  100% {right:100%;}
+}
 
 
 
 /* -------------------- a hovers ------------------------- */
   /* Change the link color to #111 (black) on hover */
   .menu a:hover {
-        background-color: #333;
+
   }
 
 

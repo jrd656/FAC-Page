@@ -9,6 +9,7 @@
     align-items: flex-start; 
     justify-content: center;
     flex-flow: row wrap;
+    margin: auto;
     /* max-width: 350px; */
   }
   /* Display:Flex makes it responsive to width change

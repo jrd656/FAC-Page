@@ -21,3 +21,23 @@ function classToggle() {
   requir.forEach(nav => nav.classList.toggle('hidden'));
 }
 
+
+//left menu bar
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  
+  document.getElementById("main").classList.add("margin250");
+  document.getElementById("left-menu-button").classList.add("narrowhidden");
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+
+  document.getElementById("main").classList.add("margin0");
+  document.getElementById("left-menu-button").classList.remove("narrowhidden");
+
+  // var element = document.getElementById("myDIV");
+  // element.classList.add("mystyle");
+}

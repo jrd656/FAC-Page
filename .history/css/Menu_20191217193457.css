@@ -106,7 +106,7 @@
 }
 
 
-
+/* 
 a.menu-button-hidden {
   color:silver;
   text-shadow: 0 0 10px white;
@@ -120,7 +120,7 @@ a.menu-button-hidden {
 li.menu-button {
   flex: 1;
   display: flex;
-}
+} */
 
 }
 
@@ -133,7 +133,7 @@ li.menu-button {
 /* -------------------- a hovers ------------------------- */
   /* Change the link color to #111 (black) on hover */
   .menu a:hover {
-        background-color: #333;
+
   }
 
 

@@ -1,13 +1,19 @@
 
 .logos-container {
-    /* border: blue 1px solid; */
+    border: blue 1px solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; 
+
+    max-width: 900px;
+    align-self: center;
+    
   }
 
+
+
 .logos-container p {
-  DISPLAY: flex;
+  display: flex;
   align-items: center;
   color: silver;
   text-align: justify;

@@ -14,10 +14,8 @@
 
   border-radius: 2%;
   box-sizing:border-box;
-  height: 50vw;
+  height: 90vw;
   margin-bottom: 10%;
-
-  /* max-height: 20vw; */
 }
 
 .image-div-container {
@@ -49,7 +47,7 @@
     /* background-color: #282828; */
     border: solid 1px yellow;
     box-sizing:border-box;
-    flex:2;
+    /* flex:10; */
     /* position: relative; */
     width:95%; 
     margin:auto;

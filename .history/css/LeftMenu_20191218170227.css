@@ -1,3 +1,4 @@
+
   @media (min-width: 801px) {
     div.main {
       margin-left:250px;
@@ -59,7 +60,6 @@ div.left-menu-button {
   line-height: 140%;
 
   transition: visibility 1s ease;
-  transition: opacity 1s ease;
 }
 
 div.show-left-button {
@@ -81,7 +81,6 @@ div.show-left-button {
 
   .narrowhidden {
     visibility: hidden;
-    opacity: 0;
   }  
 
   }

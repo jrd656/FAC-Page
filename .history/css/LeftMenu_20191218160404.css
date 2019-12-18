@@ -1,0 +1,332 @@
+
+  @media (min-width: 801px) {
+    div.main {
+      margin-left:250px;
+    }
+
+    div.menu {
+      display:none;
+    }
+
+    
+.sidenav {
+  height: 100%;
+  /* width: 0; */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+  width: 250px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+  line-height: 140%;
+}
+
+div.left-menu-button {
+  position: fixed;
+  z-index: 999;
+  font-size:36px;
+  cursor:pointer;
+
+  top: 0px;
+  font-size: 36px;
+  height: 44px;
+  padding: 8px 0 0 0 ;
+  line-height: 140%;
+
+  transition: visibility 1s;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.margin0 {
+  margin-left:0;
+}
+
+.margin250 {
+  margin-left:250;
+}
+
+  .narrowhidden {
+    visibility: hidden;
+  }  
+
+  }
+
+
+
+  /* WED 18TH DEC. MOVED THESE FROM VAGUELY WORKING MENU FOLDER */
+  @media (max-width: 800px) {
+    .sidenav {
+      display: none;
+    }
+  
+    div.left-menu-button {
+    display: none;
+      }
+  
+    .menu {
+      position: fixed;
+      bottom: 0;
+      z-index: 990;
+      font-size: 6vw;
+      text-align: center;
+      box-sizing: border-box;
+      width:100%; 
+  
+      animation: menu;
+      animation-duration: 2s;
+    }
+  
+  @keyframes menu {
+    0% { right:100%; border-radius: 50%;}
+    100% {right:0%; border-radius: 25%}
+  }
+  
+  .menu ul {
+    list-style-type: none; /*removes bullet points,etc */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    box-sizing: border-box; 
+  }
+  
+  /* .menu-button {
+    width: 25%;
+  } */
+  
+    .hidden-menu {
+    width:auto;
+    z-index: 998;
+  }
+    .menu-button {
+      width: 25%;
+    }
+  
+  
+  .menu-items > li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    justify-content: space-evenly;
+    width:100%;
+    box-sizing: border-box; 
+
+        /* background-color: #111; */
+    /* z-index: 992; */
+  }
+  
+  .menu-items {
+    flex: 16;
+    display: flex;
+  }
+  
+  .hidden-menu ul {
+    background-color: transparent;
+    /* background-color: red; */
+    border-radius: 50%;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color:#b3b3b3;
+    width: 100%; 
+    height:100%;
+    display:block;
+    cursor: pointer;
+    margin: 0px 10px 0px 0px;
+    line-height: 200%;
+  }
+  
+  .menu-toggle-hide {
+    display: none;
+    right:110%;
+    animation-name: menuhide;
+    animation-duration: 2s;
+  }
+  
+  @keyframes menuhide {
+    0% { right:00%;}
+    100% {right:100%;}
+  }
+  
+  .hidden-menu-toggle-hide a {
+    /* background-color: transparent; */
+    color:silver;
+    text-shadow: 0 0 10px white;
+  }
+  
+  
+  
+  a.menu-button-hidden {
+    color:silver;
+    text-shadow: 0 0 10px white;
+  }
+  
+  .fixed-menu {
+    animation: menu;
+    animation-duration: 2s;
+  }
+  
+  li.menu-button {
+    flex: 1;
+    display: flex;
+  }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* -------------------- a hovers ------------------------- */
+    /* Change the link color to #111 (black) on hover */
+    .menu a:hover {
+          background-color: #333;
+    }
+  
+  
+    .menu-button-hidden {
+      text-shadow: 0 0 10px black;
+      background-color: transparent;
+    }
+    
+    /* a:visited {color:white;}
+    a:hover {color: black;} */
+    /* a:active {color: blue;} */
+    
+  
+  
+    @media (min-width: 480px) {
+      .menu a {
+        font-size: 20px;
+      }
+    }
+  
+    @media (min-width: 801px) {
+      div.main {
+        margin-left:250px;
+      }
+  
+      div.menu {
+        display:none;
+      }
+  
+      
+  .sidenav {
+    height: 100%;
+    /* width: 0; */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+    width: 250px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  
+    line-height: 140%;
+  }
+  
+  div.left-menu-button {
+    position: fixed;
+    z-index: 999;
+    font-size:36px;
+    cursor:pointer;
+  
+    top: 0px;
+    font-size: 36px;
+    height: 44px;
+    padding: 8px 0 0 0 ;
+    line-height: 140%;
+  
+  
+    opacity: 1;
+    animation: fadein 2s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  .margin0 {
+    margin-left:0;
+  }
+  
+  .margin250 {
+    margin-left:250;
+  }
+  
+    .narrowhidden {
+      visibility: hidden;
+      opacity: 0;
+  
+    }  
+  
+    }

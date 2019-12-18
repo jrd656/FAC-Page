@@ -1,15 +1,12 @@
 @media (max-width: 800px) {
 
+
   .sidenav {
     display: none;
   }
 
   div.left-menu-button {
   display: none;
-    }
-
-  div.main {
-      margin-left:0;
     }
 
 .menu {
@@ -48,7 +45,7 @@
   /* display: flex; */
 }
 
-.menu-button {
+.menu-button, .menu-button-hidden {
 width: 10%;
 }
 

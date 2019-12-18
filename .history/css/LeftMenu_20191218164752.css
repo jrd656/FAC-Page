@@ -1,3 +1,4 @@
+
   @media (min-width: 801px) {
     div.main {
       margin-left:250px;
@@ -46,7 +47,6 @@
 }
 
 div.left-menu-button {
-  display: none;
   position: fixed;
   z-index: 999;
   font-size:36px;
@@ -58,13 +58,9 @@ div.left-menu-button {
   padding: 8px 0 0 0 ;
   line-height: 140%;
 
-  transition: visibility 1s ease;
-  transition: opacity 1s ease;
+  transition: visibility 1s;
 }
 
-div.show-left-button {
-  display:block;
-}
 
 #main {
   transition: margin-left .5s;
@@ -81,7 +77,6 @@ div.show-left-button {
 
   .narrowhidden {
     visibility: hidden;
-    opacity: 0;
   }  
 
   }

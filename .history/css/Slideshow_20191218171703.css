@@ -14,10 +14,8 @@
 
   border-radius: 2%;
   box-sizing:border-box;
-  height: 50vw;
+  height: 90vw;
   margin-bottom: 10%;
-
-  /* max-height: 20vw; */
 }
 
 .image-div-container {

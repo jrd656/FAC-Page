@@ -23,13 +23,11 @@ function classToggle() {
 
 
 //left menu bar
-//Click Menu Button to open menu
 function openNav() {
-  //Create width for left menu
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
+  
   document.getElementById("main").classList.add("margin250");
-  //hide menu button
   document.getElementById("left-menu-button").classList.add("narrowhidden");
 }
 
@@ -39,7 +37,6 @@ function closeNav() {
 
   document.getElementById("main").classList.add("margin0");
   document.getElementById("left-menu-button").classList.remove("narrowhidden");
-  document.getElementById("left-menu-button").classList.add("show-left-button");
 
   // var element = document.getElementById("myDIV");
   // element.classList.add("mystyle");

@@ -1,15 +1,21 @@
 @media (max-width: 800px) {
 
+div.testing {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 5px red solid;
+  background-color: hotpink;
+  opacity: 0.5;
+}
+
+
   .sidenav {
     display: none;
   }
 
   div.left-menu-button {
   display: none;
-    }
-
-  div.main {
-      margin-left:0;
     }
 
 .menu {
@@ -19,11 +25,11 @@
   font-size: 6vw;
   text-align: center;
   box-sizing: border-box;
-  width:100%; 
+  width:100vw; 
   animation: menu;
   animation-duration: 2s;
 
-  box-sizing: border-box; 
+  left: 0;
 }
 
 @keyframes menu {
@@ -45,12 +51,11 @@
 
 .fixed-menu ul {
   background-color: #111;
-  /* display: flex; */
 }
 
-.menu-button {
-width: 10%;
-}
+/* .menu-button {
+width: 25%;
+} */
 
 .hidden-menu {
   width:auto;
@@ -59,7 +64,6 @@ width: 10%;
 
 .menu-items > li {
 flex: 1;
-width: 20%;
 }
 
 .menu-items {

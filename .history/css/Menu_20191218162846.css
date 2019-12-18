@@ -1,15 +1,18 @@
 @media (max-width: 800px) {
 
+div.testing-div {
+
+
+
+}
+
+
   .sidenav {
     display: none;
   }
 
   div.left-menu-button {
   display: none;
-    }
-
-  div.main {
-      margin-left:0;
     }
 
 .menu {
@@ -22,6 +25,17 @@
   width:100%; 
   animation: menu;
   animation-duration: 2s;
+
+  /* left: 0; */
+  border: 10px red solid;
+
+
+
+  border: 10px red solid;
+
+
+
+
 
   box-sizing: border-box; 
 }
@@ -45,12 +59,11 @@
 
 .fixed-menu ul {
   background-color: #111;
-  /* display: flex; */
 }
 
-.menu-button {
-width: 10%;
-}
+/* .menu-button {
+width: 25%;
+} */
 
 .hidden-menu {
   width:auto;
@@ -59,7 +72,6 @@ width: 10%;
 
 .menu-items > li {
 flex: 1;
-width: 20%;
 }
 
 .menu-items {

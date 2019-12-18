@@ -1,0 +1,27 @@
+@media (max-width: 800px) {
+
+  .sidenav {
+    display: none;
+  }
+
+  div.left-menu-button {
+  display: none;
+    }
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  font-size: 6vw;
+  text-align: center;
+  box-sizing: border-box;
+  width:100vw; 
+  animation: menu;
+  animation-duration: 2s;
+
+  overflow:hidden;
+}
+
+
+
+

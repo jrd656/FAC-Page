@@ -18,13 +18,11 @@
   width:100vw; 
   animation: menu;
   animation-duration: 2s;
-
-  left: 0;
 }
 
 @keyframes menu {
-0% { left:-100%; border-radius: 50%;}
-100% {left:0%; border-radius: 25%}
+0% { right:100%; border-radius: 50%;}
+100% {right:0%; border-radius: 25%}
 }
 
 .menu ul {
@@ -78,34 +76,6 @@ margin: 0px 0px 0px 0px;
 line-height: 200%;
 }
 
-.menu-toggle-hide {
-/* display: none; */
-left:100%;
-animation-name: menuhide;
-animation-duration: 2s;
-}
-
-@keyframes menuhide {
-0% { left:00%; opacity:1;}
-100% {left:-100%; opacity:0;}
-}
-
-.hidden-menu-toggle-hide a {
-background-color: none;
-color:silver;
-text-shadow: 0 0 10px white;
-}
-
-a.menu-button-hidden {
-  animation-name: opacityToZero;
-  animation-duration: 2s;
-  }
-  
-  @keyframes opacityToZero {
-  0% {  opacity:1;}
-  10% { opacity:0;}
-  100% { opacity:0;}
-  }
 
 /* -------------------- a hovers ------------------------- */
 /* Change the link color to #111 (black) on hover */

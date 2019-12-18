@@ -107,6 +107,7 @@ div.left-menu-button {
       animation-duration: 2s;
     }
   
+  
   @keyframes menu {
     0% { right:100%; border-radius: 50%;}
     100% {right:0%; border-radius: 25%}

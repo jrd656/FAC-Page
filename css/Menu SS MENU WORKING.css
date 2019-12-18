@@ -1,0 +1,102 @@
+.menu {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    font-size: 6vw;
+    text-align: center;
+    box-sizing: border-box;
+    width:100%; 
+    animation: menu;
+    animation-duration: 2s;
+}
+
+@keyframes menu {
+  0% { right:100%; border-radius: 50%;}
+  100% {right:0%; border-radius: 25%}
+}
+
+.hidden-menu {
+  width:auto;
+  z-index: 998;
+}
+
+.menu ul {
+    list-style-type: none; /*removes bullet points,etc */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    box-sizing: border-box; 
+}
+
+.menu-button {
+  width: 25%;
+}
+
+.menu-items > li {
+  flex: 1;
+}
+
+.menu-items {
+  flex: 3;
+  display: flex;
+}
+
+.hidden-menu ul {
+  /* background-color: transparent; */
+  background-color: red;
+  border-radius: 50%;
+}
+
+.menu a {
+  text-decoration: none;
+  color:#b3b3b3;
+  width: 100%; 
+  height:100%;
+  display:block;
+  cursor: pointer;
+  margin: 0px 10px 0px 0px;
+  line-height: 200%;
+}
+
+.menu-toggle-hide {
+  /* display: none; */
+  right:100%;
+  animation-name: menuhide;
+  animation-duration: 2s;
+}
+
+@keyframes menuhide {
+  0% { right:00%;}
+  100% {right:100%;}
+}
+
+.hidden-menu-toggle-hide a {
+  /* background-color: transparent; */
+  color:black;
+  text-shadow: 0 0 10px white;
+}
+
+/* -------------------- a hovers ------------------------- */
+  /* Change the link color to #111 (black) on hover */
+  .menu a:hover {
+    background-color: #333;
+  }
+  
+  .hidden-menu-toggle-hide a:hover {
+    text-shadow: 0 0 10px black;
+    background-color: transparent;
+  }
+  
+  /* a:visited {color:white;}
+  a:hover {color: black;} */
+  a:active {color: blue;}
+  
+
+
+
+
+

@@ -91,7 +91,7 @@ div.carousel-container {
     opacity: 0.5; */
     height: 5vh;
     position: relative;
-    margin-top: 1%;
+    margin-top: 2%;
   }
         /* Next and previous buttons */
       .arrows {
@@ -167,7 +167,6 @@ div.carousel-container {
       /* display: flex;
       justify-content: flex-end;
       flex-direction: column; */
-      margin-top: 3%;
   }
 
   .caption-containers {

@@ -1,7 +1,7 @@
 
 div.parallax {
   /* The image used */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Images/Slides/JD\ Lake\ Titicaca.jpg);
+  background-image: url(../Images/Slides/JD\ Lake\ Titicaca.jpg);
 
   /* Set a specific height */
   /* min-height: 100vh;  */
@@ -31,4 +31,4 @@ div.parallax {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+  color: white;

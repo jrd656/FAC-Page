@@ -30,11 +30,7 @@ h2 {
   text-align:center;
   font-weight: normal; 
   padding:10px;
-  color: white;
-
-  background-color: inherit;
-  z-index: 10;
-}
+  color: white;}
 
 .main {
   margin: auto;
@@ -46,10 +42,11 @@ h2 {
 }
 
 .section {
-  background-color: #121212;
+  background-color: #282828;
+    background-color: #121212;
 
   margin: auto;
-  margin-bottom: 10%;
+  /* margin-top: 10%; */
 
   display: flex;
   flex-direction: column;
@@ -58,8 +55,6 @@ h2 {
   
   width: 95%;
   border-radius: 2%;
-
-  z-index: 10;
 }
 
 .inner-container {

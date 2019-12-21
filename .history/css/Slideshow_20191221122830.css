@@ -1,10 +1,4 @@
 
-  div.about-me-section {
-    background-color: #121212;
-    z-index: 11;
-  }
-
-
 div.carousel-container {
   /* border: solid 1px silver; */
   margin: auto;
@@ -21,7 +15,7 @@ div.carousel-container {
   margin-bottom: 10%;
 
   /* max-height: 20vw; */
-  background-color: #121212;
+  background-color: inherit;
   z-index: 11;
 }
 
@@ -35,7 +29,6 @@ div.carousel-container {
       /* margin:auto; */
       /* display:flex; */
       position: relative;
-
 
       z-index: 11;
   }

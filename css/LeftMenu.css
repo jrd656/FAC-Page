@@ -97,7 +97,7 @@ div.show-left-button {
 
 #main {
   transition: margin-left .5s;
-  /* padding: 16px; */
+  padding: 16px;
 }
 
 .margin0 {

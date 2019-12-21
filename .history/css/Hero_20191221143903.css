@@ -1,0 +1,36 @@
+
+div.parallax {
+  /* The image used */
+  background-image: url(../Images/Slides/JD\ Lake\ Titicaca.jpg);
+
+  /* Set a specific height */
+  /* min-height: 100vh;  */
+
+  min-height: 80vh;
+  /* width:90%; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-size: cover;
+
+
+
+  margin: 0;
+  padding: 0;
+  border:0;
+
+
+}
+
+
+
+div.yellowbox {
+    border: 5px solid yellow;
+    height: 10px;
+    
+    width: 100%;
+}
+

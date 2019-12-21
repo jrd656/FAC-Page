@@ -7,7 +7,7 @@ window.addEventListener("scroll", function() {
     parallax.forEach(function(prllx, i) {
         console.log("Parallax " + i + ": " + prllx.offsetTop + " / Window: " + offset);
         console.log("Parallax " + i + ": " + prllx.offsetTop + " / Window: " + offset)
-        prllx.style.opacity = (1 - offset/1000);
+        prllx.style.opacity = (1 - offset) * 0.7;
     })
 })
 

@@ -1,0 +1,26 @@
+
+.parallax {
+  /* The image used */
+  background-image: url("http://www.birds.com/wp-content/uploads/home/bird4.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+div.yellowboxes {
+    box-sizing: border-box;
+    border: 5px yellow solid;
+    height: 20px;
+    width: 100%;
+    background-color: orange;
+}

@@ -52,7 +52,7 @@ div.carousel-container {
       to {opacity: 1}
     }
 
-    img.slide1 {display:inline-block;}
+    .slide1 {display:inline-block;}
 
     .dot-container {
       position: absolute; 
@@ -192,15 +192,15 @@ div.carousel-container {
   color: white;
 }
 
-@media (min-width: 801px) {
-  .caption-text {
-    font-size: 20px;
-  }
-}
-
 @media (min-width: 1100px) {
   .caption-text {
     font-size: 25px;
+  }
+}
+
+@media (min-width: 801px, max-width: 1100px) {
+  .caption-text {
+    font-size: 20px;
   }
 }
 
@@ -245,3 +245,4 @@ div.carousel-container {
 
 }
 
+img.slide1 {display:block;}

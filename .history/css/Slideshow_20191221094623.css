@@ -11,7 +11,7 @@ div.carousel-container {
 
   border-radius: 2%;
   box-sizing:border-box;
-  height: 85vh;
+  height: 75vh;
   margin-bottom: 10%;
 
   /* max-height: 20vw; */
@@ -26,7 +26,6 @@ div.carousel-container {
       box-sizing:border-box;
       /* margin:auto; */
       /* display:flex; */
-      position: relative;
   }
 
     img.mySlides {
@@ -52,14 +51,14 @@ div.carousel-container {
       to {opacity: 1}
     }
 
-    img.slide1 {display:inline-block;}
+    .slide1 {display:inline-block;}
 
     .dot-container {
       position: absolute; 
-      bottom: 3%;
+      bottom: 20%;
       left: 50%;
-      transform: translate(-50%, 0%); 
-      z-index: 1000;
+      transform: translate(-50%, -50%); 
+      z-index: 3;
       }
     
       .JD-badge {
@@ -194,32 +193,10 @@ div.carousel-container {
 
 @media (min-width: 801px) {
   .caption-text {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 1100px) {
-  .caption-text {
     font-size: 25px;
   }
 }
-
 @media (max-width: 800px) {
-
-  div.about-me-section {
-    width: 100vw;
-    padding-left: 0;
-    margin-left: 0;
-    border-left:0;
-  }
-
-  div.carousel-container {
-    width: 100vw;
-    padding-left: 0;
-    margin-left: 0;
-    border-left:0;
-    height: 80vw;
-  }
 
   div.mySlides {
     width: 100vw;
@@ -238,10 +215,22 @@ div.carousel-container {
 
   }
 
+  div.carousel-container {
+    width: 100vw;
+    padding-left: 0;
+    margin-left: 0;
+    border-left:0;
+    height: 70vw;
+  }
 
+  div.about-me-section {
+    width: 100vw;
+    padding-left: 0;
+    margin-left: 0;
+    border-left:0;
+  }
 
   .dot-container {
-    bottom: 3%;
+    bottom: 30%;
 
 }
-

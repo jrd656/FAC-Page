@@ -52,7 +52,7 @@ div.carousel-container {
       to {opacity: 1}
     }
 
-    img.slide1 {display:inline-block;}
+    .slide1 {display:inline-block;}
 
     .dot-container {
       position: absolute; 

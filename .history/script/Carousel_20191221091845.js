@@ -1,6 +1,6 @@
 //js for carousel
 var myIndex = 0;
-var defaultInterval = 3000;
+var defaultInterval = 700;
 var slideInterval = setInterval(carousel,defaultInterval);
 
 
@@ -13,7 +13,7 @@ function carousel() {
   //hide everything
   for (i = 0; i < x.length; i++) { //iterates through elements
     x[i].style.display = "none";  // Makes all images invisible
-    dots[i].className = dots[i].className.replace(" JDwhite", ""); //makes dots all blank instead of white
+    dots[i].className = dots[i].className.replace("WhiteBadge", ""); //makes dots all blank instead of white
     captions[i].style.display = "none"; //hides all captions
   }
   //cycle to next index
@@ -23,8 +23,8 @@ function carousel() {
 
   //show the relevant item
   x[myIndex-1].style.display = "inline-block";  //Displays the index image -1.
-  dots[myIndex-1].className += " JDwhite"; // Makes dot solid.
-  captions[myIndex-1].style.display = "block"; //displays caption?
+  dots[myIndex-1].className += "WhiteBadge"; // Makes dot solid.
+  captions[myIndex-1].style.display = "block";
   // console.log(x[myIndex-1].style.display);
   } //carousel function
 
@@ -38,7 +38,7 @@ function plusDivs(arrowDirection){ // arrow direction gives arg -1 for left, 1 f
   //hide everything
   for (i = 0; i < x.length; i++) { //hide arrays
   x[i].style.display = "none";  // Makes all images invisible
-  dots[i].className = dots[i].className.replace(" JDwhite", ""); //makes dots all blank instead of white
+  dots[i].className = dots[i].className.replace("WhiteBadge", ""); //makes dots all blank instead of white
   captions[i].style.display = "none"; //hides all captions
   }
   //change index depending on arrow direction
@@ -48,7 +48,7 @@ function plusDivs(arrowDirection){ // arrow direction gives arg -1 for left, 1 f
 
   //show the relevant item
   x[myIndex-1].style.display = "block";  //Displays the index image -1.
-  dots[myIndex-1].className += " JDwhite"; // Makes dot solid.
+  dots[myIndex-1].className += "WhiteBadge"; // Makes dot solid.
   captions[myIndex-1].style.display = "block";
 
   if(playing) {

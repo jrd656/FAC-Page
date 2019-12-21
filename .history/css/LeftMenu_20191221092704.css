@@ -20,11 +20,7 @@ div.left-menu-button {
   height: 44px;
   padding: 8px 0 0 0 ;
   line-height: 140%;
-  color: silver;
-}
 
-div.left-menu-button:hover {
-  color: #f1f1f1;
 }
 
 @media (min-width: 801px) {

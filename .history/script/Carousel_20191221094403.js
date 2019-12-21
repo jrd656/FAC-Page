@@ -1,6 +1,6 @@
 //js for carousel
 var myIndex = 0;
-var defaultInterval = 3000;
+var defaultInterval = 1700;
 var slideInterval = setInterval(carousel,defaultInterval);
 
 
@@ -24,7 +24,7 @@ function carousel() {
   //show the relevant item
   x[myIndex-1].style.display = "inline-block";  //Displays the index image -1.
   dots[myIndex-1].className += " JDwhite"; // Makes dot solid.
-  captions[myIndex-1].style.display = "block"; //displays caption?
+  captions[myIndex-1].style.display = "block";
   // console.log(x[myIndex-1].style.display);
   } //carousel function
 

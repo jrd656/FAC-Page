@@ -1,4 +1,27 @@
 
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+  line-height: 140%;
+}
+
+div.left-menu-button {
+  position: fixed;
+  z-index: 999;
+  font-size:36px;
+  cursor:pointer;
+
+  top: 0px;
+  font-size: 36px;
+  height: 44px;
+  padding: 8px 0 0 0 ;
+  line-height: 140%;
+
+}
 
 /* Paste these in to Menu.css */
 
@@ -15,8 +38,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
     font-size: 16px;
-    color:#818181;
-    
+    color:white;
 
     margin: 0;
     padding: 0;

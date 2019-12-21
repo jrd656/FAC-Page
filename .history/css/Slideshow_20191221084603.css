@@ -34,7 +34,7 @@ div.carousel-container {
         display:none;
         /* object-fit:contain; */
         object-fit: scale-down;
-        height: 60vh;
+        height: 50vh;
         width: 95%;
         /* height: 400px; */
         /* vertical-align: middle; */

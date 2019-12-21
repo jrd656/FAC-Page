@@ -58,45 +58,45 @@
             <h2>About Me</h2>
                 <!-- carousel container -->
             <div  class="carousel-container " title="Use left arrow, right arrow, and 'p' to control slides.">
-                                
+                
+                <!-- left and right arrow buttons below -->
+                <div class="arrows prev" onclick="plusDivs(-1)" title="(press left arrow key)">&#10094;</div>
+                <div class="arrows next" onclick="plusDivs(1)" title="(press right arrow key)">&#10095;</div>
+                <!-- pause button below, arrows above -->
+                <button class="pause-btn" id="pause" title="(press 'p key to play/pause)">&#9616;&nbsp;&#9612</button>
+                <!-- dots  -->
+                <div class="dot-container">
+                    <span class="JD-badge dot" onclick="currentDiv(1)"></span>
+                    <span class="JD-badge dot" onclick="currentDiv(2)"></span>
+                    <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                    <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                    <span class="JD-badge dot " onclick="currentDiv(3)"></span>
+                </div> <!-- dots -->
+                
                 <!-- images below -->
                 <div class="image-div-container">
                     <img class="slide1 mySlides fade-in" src="Images/Slides/JD in Abbey.jpg">
                     <img class="mySlides fade-in" src="Images/Slides/Network Logos.png ">
                     <img class="mySlides fade-in" src="Images/Slides/James Daniels Construction DOH HQ.jpg">
-                    <img class="mySlides fade-in" src="Images/Slides/Jeremy-Edited-Caption-narrow.png"> 
-                    <!-- <img class="mySlides fade-in" src="Images/Slides/S*n Zoom.png"> -->
+                    <img class="mySlides fade-in" src="Images/Slides/Jeremy-Edited-Caption.xcf"> 
+                    <img class="mySlides fade-in" src="Images/S*n Zoom.png">
                 </div>
 
-                <!-- dots  -->
-                <div class="dot-container">
-                        <span class="JD-badge dot" onclick="currentDiv(1)"></span>
-                        <span class="JD-badge dot" onclick="currentDiv(2)"></span>
-                        <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                        <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                        <span class="JD-badge dot " onclick="currentDiv(3)"></span>
-                </div> <!-- dots -->
 
-                <!-- left and right arrow buttons below -->
-                <div class="controls-container-orange">
-                    <div class="arrows prev" onclick="plusDivs(-1)" title="(press left arrow key)">&#10094;</div>
-                    <div class="arrows next" onclick="plusDivs(1)" title="(press right arrow key)">&#10095;</div>
-                    <!-- pause button below, arrows above -->
-                    <button class="pause-btn" id="pause" title="(press 'p key to play/pause)">&#9616;&nbsp;&#9612</button>
-                </div>
                 <!-- captions -->
                 <div class="div-for-captions">
-                    <div class = "caption-containers caption1 ">
+                    <div class = "caption-containers caption1 top-left-container">
                         <div class="caption-text ">1 Hi, I'm James and I'm pursuing a career in coding. </div>
                     </div>
-                    <div class = "caption-containers ">
+                    <div class = "caption-containers top-right-container">
                         <div class="caption-text " >2 Since July 2019 I've been exploring the world of software development</div>
                     </div>
-                    <div class = "caption-containers ">    
+                    <div class = "caption-containers top-right-container">    
                         <div class="caption-text " >I previously spent 8 years working in the construction and civil engineering industries.</div>
                     </div>
                     <div class = "caption-containers ">
                             <div class="caption-text " >Working on some high profile projects in the UK and the Middle East.</div>
+                            <div class="caption-text ">(It's the same bathroom!) </div>
                     </div>
                     <div class = "caption-containers " >
                             <div class="caption-text ">(SCANDAL!) </div>

@@ -34,7 +34,7 @@ div.carousel-container {
         display:none;
         /* object-fit:contain; */
         object-fit: scale-down;
-        height: 60vh;
+        height: 40vh;
         width: 95%;
         /* height: 400px; */
         /* vertical-align: middle; */
@@ -192,6 +192,15 @@ div.carousel-container {
 
   }
 
+
+  div.image-div-container {
+    width: 100vw;
+    padding-left: 0;
+    margin-left: 0;
+    border-left:0;
+    border: yellow 1px solid;
+  }
+
   div.carousel-container {
     width: 100vw;
     padding-left: 0;
@@ -206,5 +215,6 @@ div.carousel-container {
     margin-left: 0;
     border-left:0;
   }
+
 
 }

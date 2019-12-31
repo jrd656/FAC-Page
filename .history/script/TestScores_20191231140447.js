@@ -236,8 +236,9 @@ fetch(FCCreq)
     })
     .then( (jsonData) =>{
         console.log("FCC jsonData: " + jsonData);
-        scoreFCC = jsonData.entities.user.jrd656.points;
+        scoreFCC = jsonData.entities;
         
+        document.getElementById('changeText').textContent = scoreFCC;
         document.getElementById('FCCscore').textContent = scoreFCC +"/250 points on FreeCodeCamp! (live)";
     })
     .catch( (err) =>{

@@ -91,7 +91,7 @@ console.log("NewVar: " + newVar);
 
 /*
 
-//USING FETCH, FROM https://www.youtube.com/watch?v=1tVCwv_BX2M&t=16s
+//USING FETCH FROM https://www.youtube.com/watch?v=1tVCwv_BX2M&t=16s
 //THIS WORKED! JUST NEED TO OVERCOME CORS NOW
 
 fetch(url1)
@@ -160,86 +160,13 @@ fetch(url)
 */
 
 
-/*
 
 const proxyurl1 = "https://git.heroku.com/agile-waters-87216.git/";
-const proxyurl2 = "https://agile-waters-87216.herokuapp.com/"
 const proxyurl = "https://cors-anywhere.herokuapp.com/";
 const url = "https://example.com"; // site that doesn’t send Access-Control-*
-fetch(proxyurl2 + url1) // https://cors-anywhere.herokuapp.com/https://example.com
+fetch(proxyurl1 + url1) // https://cors-anywhere.herokuapp.com/https://example.com
 .then(response => response.text())
 .then(contents => console.log(contents))
-.catch(() => console.log("Can’t access " + url1 + " response. Blocked by browser?"))
-
-*/
-
-//HOW TO OVERCOME SORS: https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe
-
-const proxyurl2 = "https://agile-waters-87216.herokuapp.com/"
+.catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
 
 
-// FROM https://www.youtube.com/watch?v=YJ7ZgGnhN5k&t=27s
-let h = new Headers();
-h.append('Accept', 'application/json');
-// h.append('Access-Control-Allow-Origin', '*');
-
-
-
-//CODEWARS:
-const codewarsurl = "https://www.codewars.com/api/v1/users/jrd656";
-const codewarsURLcors = proxyurl2+codewarsurl;
-console.log("codewarsURLcors: " + codewarsURLcors);
-
-let req = new Request(codewarsURLcors, {
-    method: 'GET',
-    headers: h,
-    mode: 'cors',    
-});
-
-fetch(req)
-    .then((response)=>{
-        if(response.ok){
-            return response.json();
-        }else{
-            throw new Error('BAD HTTP stuff');
-        }
-    })
-    .then( (jsonData) =>{
-        console.log("jsonData: " + jsonData);
-        scoreCodeWars = jsonData.honor;
-        document.getElementById('CWscore').textContent = scoreCodeWars + "/300 kata and 5/5kyu on Code Wars! (live)";
-    })
-    .catch( (err) =>{
-        console.log('ERROR:', err.message);
-    });
-
-
-
-//FREECODECAMP
-const FCCurl = "https://api.freecodecamp.org/internal/api/users/get-public-profile?username=jrd656";
-const FCCurlCORS = proxyurl2+FCCurl;
-console.log("FCCurlCORS: " + FCCurlCORS);
-
-let FCCreq = new Request(FCCurlCORS, {
-    method: 'GET',
-    headers: h,
-    mode: 'cors',    
-});
-
-fetch(FCCreq)
-    .then((response)=>{
-        if(response.ok){
-            return response.json();
-        }else{
-            throw new Error('BAD HTTP stuff');
-        }
-    })
-    .then( (jsonData) =>{
-        console.log("FCC jsonData: " + jsonData);
-        scoreFCC = jsonData.entities.user.jrd656.points;
-        
-        document.getElementById('FCCscore').textContent = scoreFCC +"/250 points on FreeCodeCamp! (live)";
-    })
-    .catch( (err) =>{
-        console.log('ERROR:', err.message);
-    });

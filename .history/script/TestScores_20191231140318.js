@@ -207,7 +207,8 @@ fetch(req)
     .then( (jsonData) =>{
         console.log("jsonData: " + jsonData);
         scoreCodeWars = jsonData.honor;
-        document.getElementById('CWscore').textContent = scoreCodeWars + "/300 kata and 5/5kyu on Code Wars! (live)";
+        document.getElementById('changeText').textContent = scoreCodeWars;
+        document.getElementById('CWscore').textContent = scoreCodeWars +"/300 kata and 5/5kyu on Code Wars! (live)";
     })
     .catch( (err) =>{
         console.log('ERROR:', err.message);
@@ -236,8 +237,9 @@ fetch(FCCreq)
     })
     .then( (jsonData) =>{
         console.log("FCC jsonData: " + jsonData);
-        scoreFCC = jsonData.entities.user.jrd656.points;
+        scoreFCC = jsonData.honor;
         
+        document.getElementById('changeText').textContent = scoreFCC;
         document.getElementById('FCCscore').textContent = scoreFCC +"/250 points on FreeCodeCamp! (live)";
     })
     .catch( (err) =>{

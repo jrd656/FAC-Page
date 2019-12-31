@@ -173,27 +173,22 @@ fetch(proxyurl2 + url1) // https://cors-anywhere.herokuapp.com/https://example.c
 
 */
 
-//HOW TO OVERCOME SORS: https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe
-
 const proxyurl2 = "https://agile-waters-87216.herokuapp.com/"
 
+const codewarsurl = "https://www.codewars.com/api/v1/users/jrd656";
+const codewarsURLcors = proxyurl2+codewarsurl;
+console.log("codewarsURLcors: " + codewarsURLcors);
 
 // FROM https://www.youtube.com/watch?v=YJ7ZgGnhN5k&t=27s
 let h = new Headers();
 h.append('Accept', 'application/json');
 // h.append('Access-Control-Allow-Origin', '*');
 
-
-
-//CODEWARS:
-const codewarsurl = "https://www.codewars.com/api/v1/users/jrd656";
-const codewarsURLcors = proxyurl2+codewarsurl;
-console.log("codewarsURLcors: " + codewarsURLcors);
-
 let req = new Request(codewarsURLcors, {
     method: 'GET',
     headers: h,
-    mode: 'cors',    
+    mode: 'cors',
+    
 });
 
 fetch(req)
@@ -206,40 +201,12 @@ fetch(req)
     })
     .then( (jsonData) =>{
         console.log("jsonData: " + jsonData);
-        scoreCodeWars = jsonData.honor;
-        document.getElementById('CWscore').textContent = scoreCodeWars + "/300 kata and 5/5kyu on Code Wars! (live)";
+        usernameCodeWars = data.username;
+        scoreCodeWars = data.honor;
+        console.log("username: " + data.username);
+        document.getElementById('changeText').textContent = scoreCodeWars;
     })
     .catch( (err) =>{
         console.log('ERROR:', err.message);
     });
 
-
-
-//FREECODECAMP
-const FCCurl = "https://api.freecodecamp.org/internal/api/users/get-public-profile?username=jrd656";
-const FCCurlCORS = proxyurl2+FCCurl;
-console.log("FCCurlCORS: " + FCCurlCORS);
-
-let FCCreq = new Request(FCCurlCORS, {
-    method: 'GET',
-    headers: h,
-    mode: 'cors',    
-});
-
-fetch(FCCreq)
-    .then((response)=>{
-        if(response.ok){
-            return response.json();
-        }else{
-            throw new Error('BAD HTTP stuff');
-        }
-    })
-    .then( (jsonData) =>{
-        console.log("FCC jsonData: " + jsonData);
-        scoreFCC = jsonData.entities.user.jrd656.points;
-        
-        document.getElementById('FCCscore').textContent = scoreFCC +"/250 points on FreeCodeCamp! (live)";
-    })
-    .catch( (err) =>{
-        console.log('ERROR:', err.message);
-    });

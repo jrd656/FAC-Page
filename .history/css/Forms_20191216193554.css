@@ -39,8 +39,9 @@
     flex-flow: row wrap;
     width:100%;
   }
+    
   
-  .form-name-email input, textarea {
+  #name, #email, #message {
     width:95%;
     min-width: 300px;
     box-sizing:border-box;
@@ -52,7 +53,11 @@
     border-radius: 0.2rem;
   }
   
-  #message1 {
+  #name, #email {
+
+  }
+  
+  #message {
     height: 6em;
   }
 

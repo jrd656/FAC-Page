@@ -52,6 +52,14 @@
     border-radius: 0.2rem;
   }
   
+  #name1, #email1, #message1 {
+
+  }
+  
+  #name, #email {
+
+  }
+  
   #message1 {
     height: 6em;
   }

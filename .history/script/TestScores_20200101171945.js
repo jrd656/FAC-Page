@@ -218,7 +218,7 @@ fetch(req)
 //FREECODECAMP
 const FCCurl = "https://api.freecodecamp.org/internal/api/users/get-public-profile?username=jrd656";
 const FCCurlCORS = proxyurl2+FCCurl;
-// console.log("FCCurlCORS: " + FCCurlCORS);
+console.log("FCCurlCORS: " + FCCurlCORS);
 
 let FCCreq = new Request(FCCurlCORS, {
     method: 'GET',
@@ -235,7 +235,7 @@ fetch(FCCreq)
         }
     })
     .then( (jsonData) =>{
-        // console.log("FCC jsonData: " + jsonData);
+        console.log("FCC jsonData: " + jsonData);
         scoreFCC = jsonData.entities.user.jrd656.points;
         
         document.getElementById('FCCscore').textContent = scoreFCC +"/250 points on FreeCodeCamp! (live)";

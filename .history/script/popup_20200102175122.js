@@ -16,7 +16,7 @@ console.log("test Div : " + testDiv1);
 window.addEventListener("scroll", function() {
     let offset = window.pageYOffset;
 
-    if (offset > delphi-00 || offset < delphi-1200) {
+    if (offset > delphi-100 || offset < delphi-1200) {
         popupdiv.style.display = "none";
         // console.log("We're not as far down as 2400");  
         // console.log("distance to top of delphi: "+ delphi); 

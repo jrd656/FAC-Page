@@ -3,37 +3,6 @@ let url1 = "https://www.codewars.com/api/v1/users/jrd656"
 let usernameCodeWars = 0;
 let scoreCodeWars = 0;
 
-window.onload = function() {
-    document.body.className += " loaded";
-}
-
-var links = document.getElementsByClassName("scene");
-links[0].focus();
-
-var myIndex = 0;
-var focusinterval = 2000;
-var dofocusfunction = setInterval(focusfunc,focusinterval);
-
-
-function focusfunc() {
-  //declare vars
-  var i;
-  var x = document.getElementsByClassName("scene"); // x = array of images
-//hide everything
-  for (i = 0; i < x.length; i++) { //iterates through elements
-    x[i].focus();
-  }
-  //cycle to next index
-  myIndex++; // Adds 1 to index, so now index is 1. Stops -1 being an answer.
-  if (myIndex > x.length) {myIndex = 1} //Brings index back to 1 once index gets higher than length. 
-  if (myIndex <= 0) {myIndex = x.length}; 
-
-  //show the relevant item
-  x[i].focus();  //Displays the index image -1.
-
-  // console.log(x[myIndex-1].style.display);
-  } //carousel function
-
 
 //THIS RETREIVES A JSON FROM JSONPLACEHOLDER...COM. 
 /*

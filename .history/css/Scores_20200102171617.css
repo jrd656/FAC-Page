@@ -86,10 +86,6 @@
   transform: rotateX(180deg);
 }
 
-.scene:focus .card {
-  transform: rotateX(180deg);
-}
-
 .logo-image2 {
   box-sizing: border-box;
   margin: auto;

@@ -257,7 +257,6 @@ div.carousel-container2 {
 
 #popupcontainer {
   display: block;
-  height: 300px;
    /* border:red solid; */
 
 }
@@ -316,19 +315,5 @@ text-align: center;
 padding-top: 5px;
 }
 
-div.salk {
-  box-sizing: border-box;
-  margin: auto;
-  position: absolute;
-  top: 0; left: -45%; bottom: 0; right: 0%;
 
-  border: silver 1px solid;
-  width: 140px;
-  height: 131px;
-  border-radius: 2%;
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../Images/SalkantayLake.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 

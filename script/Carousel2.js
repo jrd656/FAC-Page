@@ -1,6 +1,6 @@
 //js for carousel
 var myIndex2 = 0;
-var defaultInterval2 = 5000;
+var defaultInterval2 = 1000;
 var slideInterval2 = setInterval(carousel2,defaultInterval2);
 
 
@@ -51,7 +51,7 @@ function plusDivs2(arrowDirection2){ // arrow direction gives arg -1 for left, 1
   dots[myIndex2-1].className += " JDwhite2"; // Makes dot solid.
   captions[myIndex2-1].style.display = "block";
 
-  if(playing) {
+  if(playing2) {
     pauseSlideshow2();
     playSlideshow2();
   }
@@ -90,7 +90,7 @@ window.addEventListener("keydown",TestFunction2,false);
 function TestFunction2(key) {
   //press 'p' to pause
   if (key.keyCode == 80) {
-      if(playing) {pauseSlideshow2()} 
+      if(playing2) {pauseSlideshow2()} 
       else {
           pauseSlideshow2()
           playSlideshow2();

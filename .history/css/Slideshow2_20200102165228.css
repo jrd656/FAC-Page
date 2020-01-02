@@ -1,0 +1,335 @@
+div.about-me-section2 {
+  margin-top: 2%;
+  display: none;
+}
+div.carousel-container2 {
+
+  margin: auto;
+
+  width:98%;
+
+  flex-direction: column;
+
+  position: relative;
+
+  border-radius: 2%;
+  box-sizing:border-box;
+  height: 85vh;
+  margin-bottom: 10%;
+
+}
+
+
+  div.image-div-container2 {
+
+      background-color: #121212;
+
+      width:98%;
+
+      box-sizing:border-box;
+
+      position: relative;
+  }
+
+    img.mySlides2 {
+
+        box-sizing:border-box;
+        display:none;
+        /* object-fit:contain; */
+        /* object-fit: scale-down; */
+        height: 65vh;
+        /* width: 95%; */
+        max-width: 95%;
+        /* height: 400px; */
+        /* vertical-align: middle; */
+        margin:auto;
+        border-radius: 1%;
+
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    img.cover2 {
+      object-fit: cover;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    img.slide12 {display:inline-block;}
+
+    .dot-container2 {
+      position: absolute; 
+      bottom: 3%;
+      left: 50%;
+      transform: translate(-50%, 0%); 
+      z-index: 1000;
+      }
+    
+      .JD-badge2 {
+      font-size: 0;
+      padding: 5px 5px;
+    
+      margin: 0px 3px;
+      border-radius:50%;
+      border-width: 1px;
+    
+      background-color: rgba(17, 17, 17, 0.267);
+      color: white;
+      border-radius: 10px;
+      border-color: rgba(207, 207, 207, 0.774);
+      border-width: 2px;
+      border-style: solid;
+      opacity: 0.8;
+    }
+
+  div.controls-container-orange2 {
+
+    height: 5vh;
+    position: relative;
+    margin-top: 1%;
+  }
+        /* Next and previous buttons */
+      .arrows2 {
+        cursor: pointer;
+        color: #818181;
+        font-weight: bold;
+        font-size: 18px;
+        text-shadow: 0px 0px 8px #202020;
+
+        position: absolute;
+        top: 10%;
+
+        transition: 0.6s ease;
+        border-radius: 100%;
+
+        z-index: 2;
+        }
+
+      .next2 {
+        /* float: right;  */
+        right: 5%;
+        transform: translate(0% 0%);
+
+        padding: 5px 10px 5px 12px; }
+      .prev2 {
+        left: 5%;
+        transform: translate(0% 0%);
+
+        padding: 5px 12px 5px 10px; }
+
+      .prev2:hover, .next2:hover {
+        text-shadow: 0px 0px 20px #202020;
+        color:#f1f1f1;
+        }
+
+
+      .pause-btn2 {
+        cursor: pointer;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, 0%);  
+        text-align: center;
+        padding: 3px 8px 4px 8px;
+        font-size: 12px;  
+        background-color: rgba(17, 17, 17, 0.267);
+        color: white;
+        border-radius: 10px;
+        border-color: rgba(207, 207, 207, 0.774);
+        border-width: 2px;
+        border-style: solid;
+        z-index: 3;
+      }
+
+      button:focus {outline:0;}
+
+      .pause-btn2:hover {
+        background-color: black;
+        color: white;
+      }
+
+
+  .div-for-captions2 {
+      /* background-color: #282828; */
+      /* border: solid 1px yellow; */
+      box-sizing:border-box;
+      /* flex:2; */
+      /* position: relative; */
+      width:95%; 
+      margin:auto;
+      overflow: visible;
+
+      /* display: flex;
+      justify-content: flex-end;
+      flex-direction: column; */
+      margin-top: 3%;
+  }
+
+  .caption-containers2 {
+    /* border: green 5px solid; */
+    /* position:relative; */
+    /* height: 100%;
+    width: 100%; */
+    display: none;
+    z-index: 1;
+    margin:auto;
+    /* padding-top: 5%; */
+  }
+
+  .caption-text2 {
+      /* color: #9a9a9a; */
+      /* color: #ffffff; */
+      color: silver;
+      text-shadow: 0px 0px 8px black;
+      
+  }
+
+
+  .caption12 {
+  display:block;
+  }
+
+
+.JDwhite2 {
+  background-color: white;
+  color: white;
+}
+
+@media (min-width: 801px) {
+  .caption-text2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .caption-text2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  div.about-me-section2 {
+    width: 100vw;
+    padding-left: 0;
+    margin-left: 0;
+    border-left:0;
+  }
+
+  div.carousel-container2 {
+    width: 100vw;
+    padding-left: 0;
+    margin-left: 0;
+    border-left:0;
+    height: 80vw;
+  }
+
+  div.mySlides2 {
+    width: 100vw;
+    padding-left: 0;
+    margin-left: 0;
+    border-left:0;
+  }
+
+  img.mySlides2 {
+    width: 100vw;
+    max-width:100vw;
+    padding-left: 0;
+    margin-left: 0;
+    border-left:0;
+    height: 60vw;
+
+  }
+
+
+
+  .dot-container2 {
+    bottom: 3%;
+
+}
+} 
+
+
+/* POPUP ---------------- */
+
+#popupcontainer {
+  display: block;
+   /* border:red solid; */
+
+}
+
+#pop-up {
+
+  margin-top: 5%;
+
+  display: inline-block;
+
+  transform: translateX(150%);
+  animation: drop 2s ease forwards;
+}
+
+@keyframes drop {
+  0%{opacity: 50%}
+  75%{transform: translateX(-1%)}
+  100%{transform: translateX(-0%); opacity: 1;}
+}
+
+
+div.message-card1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  box-sizing: border-box;
+  border-radius: 3%;
+
+  width: 335px;
+  height: 180px;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  margin: auto;
+
+  display: block;
+}
+
+div.message-texts1 {
+  text-align: left;
+  width: 140px;
+  height: 80px;
+
+  position: absolute;
+  top: 0; left: 160px; bottom: 0; right: 0;
+  margin: auto;
+
+  color: silver;
+  overflow: auto;
+
+
+} 
+
+.message-texts1 p {
+margin-top: 2px;
+text-align: center;
+padding-top: 5px;
+}
+
+div.salk {
+  box-sizing: border-box;
+  margin: auto;
+  position: absolute;
+  top: 0; left: -45%; bottom: 0; right: 0%;
+
+  border: silver 1px solid;
+  width: 140px;
+  height: 131px;
+  border-radius: 2%;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../Images/SalkantayLake.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

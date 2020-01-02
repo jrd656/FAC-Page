@@ -3,6 +3,8 @@
 
 const parallaxbottom = document.querySelectorAll(".parallax-bottom");
 const parallax = document.querySelectorAll(".parallax");
+var body = document.body, html = document.documentElement;
+var heightOfPage = body.scrollHeight - html.clientHeight;
 
 window.addEventListener("scroll", function() {
     let offset = window.pageYOffset;
@@ -18,12 +20,12 @@ window.addEventListener("scroll", function() {
     prlxbottom.style.opacity = ((offset / heightOfPage)*10 - 7);
     })
 
-    console.log("heightOfPage: " + heightOfPage);
-    console.log("current height from top: "+ offset);
+
+    console.log("height from top: "+ offset + " of " + heightOfPage);
 
 })
 
-
+console.log("heightOfPage: " + heightOfPage);
 
 // console.log("Parallax " + i + ": " + prllx.offsetTop + " / Window: " + offset);
 //         prllx.style.backgroundPositionY = (offset - prllx.offsetTop) * 0.7 + "px";

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web page to form part of the Founders and Coders application">
+    <title>Founders and Coders Web Page - James Daniels</title>
+    <link rel="stylesheet" href="css/Forms.css">
+    <link rel="stylesheet" href="css/Slideshow.css">
+    <link rel="stylesheet" href="css/Slideshow2.css">
+    <link rel="stylesheet" href="css/General.css">
+    <link rel="stylesheet" href="css/Scores.css">
+    <link rel="stylesheet" href="css/Menu.css">
+    <link rel="stylesheet" href="css/LeftMenu.css">
+    <link rel="stylesheet" href="css/Hero.css">
+    <link rel="stylesheet" href="css/messages.css">
+    <!-- <link rel="stylesheet" href="css/LeftMenu.css"> -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+
+<body>
+
+
+    <!-- BOTTOM Menu Bar -->
+    <div class="menu fixed-menu">  
+        <ul> 
+            <li class="menu-button"><a>&#9776</a></li>
+            <div class="menu-items" >
+                <li><a href="#about-me-section">About</a></li>
+                <li><a href="#Prerequisuites-section-id">Scores</a></li>
+                <li><a href="#contact-me-section-id">Contact</a></li>
+            </div>
+        </ul>
+    </div> <!-- BOTTOM Menu Bar -->
+    <div class="menu hidden-menu">
+        <ul> 
+            <li><a class="menu-button menu-button-hidden">&#9776</a></li>
+        </ul>
+    </div>
+    <!-- LEFT MENU BAR -->
+    <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#about-me-section">About</a>
+            <a href="#Prerequisuites-section-id">Scores</a>
+            <a href="#contact-me-section-id">Contact</a>
+    </div>
+
+    <div class="main" id="main">
+
+            <div class="parallax">
+                <h1 class="hero-text">James Daniels</h1>
+            </div>
+            <!-- <div class="yellowbox"></div> -->
+
+
+        <div class="left-menu-button" id="left-menu-button" onclick="openNav()">&#9776;</div>
+        
+        <div class="about-me-section section" id="about-me-section" >
+            <h2>About Me</h2>
+                <!-- carousel container -->
+            <div  class="carousel-container " title="Use left arrow, right arrow, and 'p' to control slides.">
+                                
+                <!-- images below -->
+                <div class="image-div-container">
+                    <img class="slide1 mySlides cover" src="Images/Slides/JD in Abbey.jpg">
+                    <img class="mySlides" src="Images/Slides/Network Logos.png ">
+                    <img class="mySlides cover" src="Images/Slides/James Daniels Construction DOH HQ.jpg">
+                    <img class="mySlides" src="Images/Slides/Jeremy-Edited-Caption-Narrow.png"> 
+                    <img class="mySlides cover" src="Images/Slides/JD Dog Walker.jpg"> 
+                    <img class="mySlides" src="Images/Slides/Homer.jpg"> 
+                    <img class="mySlides cover" src="Images/Slides/Repetitive.gif"> 
+                    <img class="mySlides" src="Images/Slides/Founders.png"> 
+
+                    <!-- <img class="mySlides fade-in" src="Images/Slides/S*n Zoom.png"> -->
+                                    <!-- dots  -->
+                    <div class="dot-container">
+                            <span class="JD-badge dot"></span>
+                            <span class="JD-badge dot"></span>
+                            <span class="JD-badge dot"></span>
+                            <span class="JD-badge dot"></span>
+                            <span class="JD-badge dot"></span>
+                            <span class="JD-badge dot"></span>
+                            <span class="JD-badge dot"></span>
+                            <span class="JD-badge dot"></span>
+                    </div> <!-- dots -->
+                </div>
+
+                <!-- left and right arrow buttons below -->
+                <div class="controls-container-orange">
+                    <div class="arrows prev" onclick="plusDivs(-1)" title="(press left arrow key)">&#10094;</div>
+                    <div class="arrows next" onclick="plusDivs(1)" title="(press right arrow key)">&#10095;</div>
+                    <!-- pause button below, arrows above -->
+                    <button class="pause-btn" id="pause" title="(press 'p key to play/pause)">&#9616;&nbsp;&#9612</button>
+                </div>
+                <!-- captions -->
+                <div class="div-for-captions">
+                    <div class="caption-text caption-containers caption1">Hi! I'm James and I'm pursuing a career in coding. </div>
+                    <div class="caption-text caption-containers">Since July 2019 I've been exploring the world of software development - initially by diving into Ruby to create a website, and then switching to learn front-end when I heard about Founders and Coders.</div>  
+                    <div class="caption-text caption-containers">I previously spent 8 years working in the construction and civil engineering industries, having completed a degree in civil engineering in Manchester, and further studying quantity surveying.</div>
+                    <div class="caption-text caption-containers">Working on some high profile projects in the UK and the Middle East.</div>
+                    <div class="caption-text caption-containers">I've spent the last few months working in the gig-economy: doing dog walking; domestic cleaning; DIY; etc. </div>
+                    <div class="caption-containers caption-text">As much as I love dog walking (and I do love dog walking), I'm keen to move back into a field of continuous learning and problem solving</div>
+                    <div class="caption-containers caption-text">Attracted to the coding industry as a way to solve many mundane day-to-day problems I encounter in work and in life, I'm also intruiged by the progressive attitude towards work and life-balance the industry seems to promote.</div>
+                    <div class="caption-text caption-containers">The friendly and positive attitude the FAC team and applicants have demonstrated has reinforced this idea for me.</div>
+                </div> <!-- captions above -->
+
+                </div> <!-- carousel container -->
+            </div> <!-- About Me Section -->
+
+    <!-- Prerequisite Scores Section -->
+        <div id="Prerequisuites-section-id" class="section">
+            <h2>Prerequisite Scores</h2>
+            <div class="logos-container">     
+                <a class="scene" href="https://www.freecodecamp.org/jrd656">
+                    <div class="card">
+                        <div class="card__face card__face--front">
+                                <img class="logo-image2" src="Images/FCClogo.png" >
+                                <p class="logo-caption2" id="FCCscore">411/250 points on FreeCodeCamp!</p>
+                        </div>
+                        <div class="card__face card__face--back">
+                                <img class="logo-image2 fade-in fade-out" src="Images/Power.gif" >
+                                <p class="logo-caption2">Scores updated live, through the power of AJAX</p>
+                        </div>
+                    </div>
+                </a>   
+                <a class="scene" href="https://www.codewars.com/users/jrd656">
+                    <div class="card">
+                        <div class="card__face card__face--front">
+                                <img class="logo-image2" src="Images/Codewarslogo.png" >
+                                <p class="logo-caption2" id="CWscore">306/300 kata and 5/5kyu on Code Wars!</p>
+                        </div>
+                        <div class="card__face card__face--back">
+                                <img class="logo-image2 fade-in fade-out" src="Images/Power.gif" >
+                                <p class="logo-caption2">Scores updated live, through the power of AJAX</p>
+                        </div>
+                    </div>
+                </a> 
+                <a class="scene" href="https://github.com/jrd656/jamesdaniels.github.io">
+                    <div class="card">
+                        <div class="card__face card__face--front">
+                                <img class="logo-image2" src="Images/GHlogo.png" >
+                                <p class="logo-caption2">Hosted on GitHub!</p>
+                        </div>
+                        <div class="card__face card__face--back">
+                                <img class="logo-image2 fade-in fade-out" src="Images/AJAX.gif" >
+                                <p class="logo-caption2">Ajax would probably be more appropriate illustration for AJAX...</p>
+                        </div>
+                    </div>
+                </a> 
+                <a class="scene" href="https://www.codecademy.com/profiles/jamesDaniels1213407347">
+                    <div class="card">
+                        <div class="card__face card__face--front">
+                                <img class="logo-image2" src="Images/Codecademylogo.webp" >
+                                <p class="logo-caption2">211 points on Codecademy!</p>
+                        </div>
+                        <div class="card__face card__face--back">
+                                <img class="logo-image2 fade-in fade-out" src="Images/awkward.gif" >
+                                <p class="logo-caption2">Awkward. Codecademy don't provide an API. Scores last updated manually, 1st Jan 2020.</p>
+                        </div>
+                    </div>
+                </a> 
+            </div>   
+        </div> <!--logos container-->
+
+        <!-- NEW CONTACT SECTION -->
+
+        <div class="contact-me-section section" id="contact-me-section-id" >
+            <div class="section-headers">
+                    <h2>Contact Me</h2>
+                    <p>Send me an email to jrd656@gmail.com or use this form:</p>
+            </div>
+                    <form id="add-to-wishlist" class="form-container">
+                        <div class="form-name-email">
+        
+                            <input type="text" name="name1" id="name1" placeholder="Your Name">
+                            <input type="text" name="email1" id="email1"  placeholder="Your Email">
+                        </div>
+                        <div class="form-message-div">
+                            <textarea id="message1" name="message1" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="form-submit-button">Submit</button>
+                    </form>
+        </div>
+
+<ol id="wishlist"></ol>
+<ol id="emailList"></ol>
+
+
+        <div class="message-card" id="message-card">
+            <div class="message-face">
+                    <div class="message-image" src="Images/FCClogo.png" ></div>
+                    <div class="message-texts">
+                        <p class="message-name" id="messageName">Name</p>
+                        <p class="message-email" id="messageEmail">Email</p>
+                        <p class="message-text" id="messageText">Message Text...</p>
+                    </div>  
+            </div>
+        </div>
+
+
+<!-- ABOUT ME 2 -->
+    <div class="about-me-section2 section" id="about-me-section2" >
+        <h2>More About Me</h2>
+            <!-- carousel container -->
+        <div  class="carousel-container2 " title="Use left arrow, right arrow, and 'p' to control slides.">
+                            
+            <!-- images below -->
+            <div class="image-div-container2">
+                <img class="slide12 mySlides2 cover2" src="https://jrd656.github.io/jamesdaniels.github.io/Images/Slides2/sunset-tyrona.jpg">
+                <img class="mySlides2 cover2" src="https://jrd656.github.io/jamesdaniels.github.io/Images/Slides2/machupichu.jpg">
+                <img class="mySlides2 " src="https://jrd656.github.io/jamesdaniels.github.io/Images/Slides2/snowdonia.jpg"> 
+                <img class="mySlides2 cover2" src="https://jrd656.github.io/jamesdaniels.github.io/Images/Slides2/yoga-hampi.jpg">
+                <img class="mySlides2 cover2" src="Images/Slides2/Greta.gif"> 
+                <img class="mySlides2" src="Images/Slides2/SweatyTube.jpg"> 
+                <img class="mySlides2" src="Images/Slides2/caley-cup.jpg"> 
+                <img class="mySlides2 cover2" src="Images/Slides2/Forms.gif"> 
+
+                <!-- <img class="mySlides fade-in" src="Images/Slides/S*n Zoom.png"> -->
+                                <!-- dots  -->
+                <div class="dot-container2">
+                        <span class="JD-badge2 dot2"></span>
+                        <span class="JD-badge2 dot2"></span>
+                        <span class="JD-badge2 dot2"></span>
+                        <span class="JD-badge2 dot2"></span>
+                        <span class="JD-badge2 dot2"></span>
+                        <span class="JD-badge2 dot2"></span>
+                        <span class="JD-badge2 dot2"></span>
+                        <span class="JD-badge2 dot2"></span>
+                </div> <!-- dots -->
+            </div>
+
+            <!-- left and right arrow buttons below -->
+            <div class="controls-container-orange2">
+                <div class="arrows2 prev2" onclick="plusDivs2(-1)" title="(press left arrow key)">&#10094;</div>
+                <div class="arrows2 next2" onclick="plusDivs2(1)" title="(press right arrow key)">&#10095;</div>
+                <!-- pause button below, arrows above -->
+                <button class="pause-btn2" id="pause2" title="(press 'p key to play/pause)">&#9616;&nbsp;&#9612</button>
+            </div>
+            <!-- captions -->
+            <div class="div-for-captions2">
+                <div class="caption-text2 caption-containers2 caption12">I didn't want to bore anyone with too much info about me, but I got worried in case I hadn't included enough.</div>
+                <div class="caption-text2 caption-containers2">So here's a few self-indulgent photos of me doing things I enjoy. Travel with friends; travelling to meet new people; hikes...</div>  
+                <div class="caption-text2 caption-containers2">...Even where I grew up in North Wales (...mostly)</div>
+                <div class="caption-text2 caption-containers2">(I'm actually hopeless at yoga)</div>
+                <div class="caption-text2 caption-containers2">Although - as ideas like flygskam have been gathering pace, I've been having second thoughts about any more flights, and reducing my travel footprint..</div>
+                <div class="caption-containers2 caption-text2">And the idea of a job with a small commute and the possibility of working-from-home days gets ever more appealing.</div>
+                <div class="caption-containers2 caption-text2">I enjoy playing sports. Lately my friends are trying to introduce me to squash. Really though, I'm a bit of a geek. I'm fascinated by history and politics, and I also enjoy cooking. </div>
+                <div class="caption-text2 caption-containers2">I'm going to leave with you this quote from Pscho Sam, which pretty well sums up why I want to work in something that will save people losing hours of their lives doing admin.</div>
+            </div> <!-- captions above -->
+
+            </div> <!-- carousel container -->
+        </div> <!-- About Me Section -->
+
+        <div style="height: 400px; border:red solid;">
+            <a id="pop-up" href="#about-me-section2" onclick="popupclicked()" class="popupanchor">
+                <div class="message-card1" >
+                    <div class="message-face" style="border: gold solid 1px">
+                        <div class=" salk" src="Images/SalkantayLake.jpg" ></div>
+                        <div class="message-texts1">
+                            <p class="message-text" id="messageText">For some more info about me, click here</p>
+                        </div>  
+                    </div>
+                </div>
+            </a>
+        </div>   
+
+        <div class="parallax-bottom" id="parallax-bottom">
+            <h1 class="parallax-bottom-text">Thanks for viewing</h1>
+        </div>
+    </div></div>> <!-- main -->
+
+
+<!-- <script src="script.js"></script> -->
+<script src="script/script.js"></script>
+<script src="script/Carousel.js"></script>
+<script src="script/Carousel2.js"></script>
+<script src="script/Menu.js"></script>
+<script src="script/TestScores.js"></script>
+<script src="script/ContactForm.js"></script>
+<script src="script/popup.js"></script>
+
+
+</body>
+</html>

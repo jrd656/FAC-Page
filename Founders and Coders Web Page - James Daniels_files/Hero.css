@@ -1,0 +1,72 @@
+
+div.parallax {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Images/Slides/JD\ Lake\ Titicaca.jpg);
+
+  /* Set a specific height */
+  /* min-height: 100vh;  */
+
+  min-height: 80vh;
+  /* width:90%; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-size: cover;
+
+  margin: 0;
+  padding: 0;
+  border:0;
+
+  opacity: 1;
+  position: relative;
+}
+
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+div.parallax-bottom {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../Images/Delphi.png);
+
+  /* Set a specific height */
+  /* min-height: 100vh;  */
+
+  min-height: 150vh;
+  /* width:90%; */
+
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-size: cover;
+
+
+  margin: 0;
+  padding: 0;
+  border:0;
+
+  opacity: 1;
+  position: relative;
+
+  padding-top: 30%;
+}
+
+h1.parallax-bottom-text {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

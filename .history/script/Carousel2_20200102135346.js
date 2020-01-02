@@ -110,8 +110,8 @@ function TestFunction2(key) {
 
 function popupclicked(){
 
-  var slides2 = document.getElementById("about-me-section2");
-  var popup = document.getElementById("pop-up");
+  var slides2 = document.getElementByClassName("about-me-section2");
+  var popup = document.getElementByClassName("popupanchor");
 
   console.log(popup);
 

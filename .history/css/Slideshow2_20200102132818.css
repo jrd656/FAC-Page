@@ -1,6 +1,5 @@
 div.about-me-section2 {
   margin-top: 2%;
-  display: none;
 }
 div.carousel-container2 {
 
@@ -294,31 +293,18 @@ text-align: center;
 padding-top: 5px;
 }
 
-div.salk {
-  box-sizing: border-box;
-  margin: auto;
-  position: absolute;
-  top: 0; left: -45%; bottom: 0; right: 0%;
-
-  border: silver 1px solid;
-  width: 140px;
-  height: 131px;
-  border-radius: 2%;
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../Images/SalkantayLake.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 
 #pop-up {
+  transform: translateX(50%);
+  animation: drop 1s ease forwards;
+
+
   margin-bottom: 15%;
   margin-top: 15%;
 
   display: inline-block;
 
-  transform: translateX(150%);
-  animation: drop 2s ease forwards;
 }
 
 @keyframes drop {

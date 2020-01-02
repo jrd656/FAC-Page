@@ -103,19 +103,3 @@ function TestFunction2(key) {
 
 //space is 32, p is 80
 //left arrow 37 right arrow 38
-
-
-//POPUP
-
-
-function popupclicked(){
-
-  var slides2 = document.getElementById("about-me-section2");
-  var popup = document.getElementById("pop-up");
-
-  console.log(popup);
-
-  slides2.style.display = "inline-block";
-  popup.style.display = "none";
-
-}

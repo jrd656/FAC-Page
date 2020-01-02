@@ -15,7 +15,7 @@ window.addEventListener("scroll", function() {
     var heightOfPage = body.scrollHeight - html.clientHeight;
 
     parallaxbottom.forEach(function(prlxbottom) {
-    prlxbottom.style.opacity = ((offset / heightOfPage)*10 - 7);
+    prlxbottom.style.opacity = ((offset / heightOfPage)*9 - 7);
     })
 
     console.log("heightOfPage: " + heightOfPage);

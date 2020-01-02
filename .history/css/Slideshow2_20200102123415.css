@@ -1,13 +1,12 @@
 div.about-me-section2 {
   margin-top: 2%;
-  display: none;
 }
 div.carousel-container2 {
-
+  /* border: solid 1px silver; */
   margin: auto;
 
   width:98%;
-
+  /* display: flex; */
   flex-direction: column;
 
   position: relative;
@@ -17,22 +16,24 @@ div.carousel-container2 {
   height: 85vh;
   margin-bottom: 10%;
 
+  /* max-height: 20vw; */
 }
 
 
   div.image-div-container2 {
-
+      /* border: solid 1px blue; */
       background-color: #121212;
-
+      /* flex:16; */
       width:98%;
-
+      /* height: 80vw; */
       box-sizing:border-box;
-
+      /* margin:auto; */
+      /* display:flex; */
       position: relative;
   }
 
     img.mySlides2 {
-
+        /* border: solid 1px slategrey; */
         box-sizing:border-box;
         display:none;
         /* object-fit:contain; */
@@ -86,7 +87,9 @@ div.carousel-container2 {
     }
 
   div.controls-container-orange2 {
-
+    /* border: 1px orangered solid;
+    background-color: orange;
+    opacity: 0.5; */
     height: 5vh;
     position: relative;
     margin-top: 1%;
@@ -250,7 +253,7 @@ div.carousel-container2 {
     bottom: 3%;
 
 }
-} 
+
 
 
 /* POPUP ---------------- */
@@ -270,59 +273,19 @@ div.message-card1 {
 
   margin: auto;
 
-  display: block;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 5%;
+
 }
-
-div.message-texts1 {
-  text-align: left;
-  width: 140px;
-  height: 80px;
-
-  position: absolute;
-  top: 0; left: 160px; bottom: 0; right: 0;
-  margin: auto;
-
-  color: silver;
-  overflow: auto;
-
-
-} 
-
-.message-texts1 p {
-margin-top: 2px;
-text-align: center;
-padding-top: 5px;
-}
-
-div.salk {
-  box-sizing: border-box;
-  margin: auto;
-  position: absolute;
-  top: 0; left: -45%; bottom: 0; right: 0%;
-
-  border: silver 1px solid;
-  width: 140px;
-  height: 131px;
-  border-radius: 2%;
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../Images/SalkantayLake.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 
 #pop-up {
-  margin-bottom: 15%;
-  margin-top: 15%;
-
-  display: inline-block;
-
-  transform: translateX(150%);
-  animation: drop 2s ease forwards;
+  right: -10%;
+  animation: drop 0.5s ease forwards;
 }
 
 @keyframes drop {
   0%{opacity: 50%}
-  75%{transform: translateX(-1%)}
+  75%{transform: translateX(-2%)}
   100%{transform: translateX(-0%); opacity: 1;}
 }
